@@ -1,0 +1,1881 @@
+{
+"T": {
+"ar": {
+"title": "صدع",
+"tag": "رمّم الصورة، واحتفظ بخيوط الذهب.",
+"play": "العب",
+"levels": "المراحل",
+"daily": "التحدي اليومي",
+"settings": "الإعدادات",
+"cuts": "الحركات",
+"target": "الهدف",
+"restored": "المكتمل",
+"undo": "تراجع",
+"restart": "إعادة",
+"peek": "معاينة",
+"hint": "تلميح",
+"next": "التالي",
+"replay": "إعادة اللعب",
+"share": "مشاركة",
+"copied": "تم نسخ النتيجة",
+"copyFail": "تعذّر النسخ",
+"grades": [
+"تم الترميم",
+"ترميم متقن",
+"تحفة"
+],
+"silver": "استخدمت تلميحاً. أعدها بدونه لتنال «تحفة».",
+"beat": "أقل من الهدف! ترميم نادر.",
+"slide": {
+"fmt": "اسحب {0}"
+},
+"hold": {
+"fmt": "اضغط مطولاً ثم اسحب {0}"
+},
+"tapAgain": "اضغط تلميح مرة ثانية لتنفيذ الحركة",
+"adLabel": "مساحة إعلانية · وضع الاختبار",
+"adHead": "مساحة راعٍ",
+"adBody": "هنا يظهر إعلان شبكة الإعلانات\nأو صورة يوم برعاية علامة تجارية",
+"adRewarded": "شاهد حتى النهاية لتحصل على تلميح",
+"adWatch": "شاهد الإعلان",
+"adNo": "إغلاق بدون تلميح",
+"adSkip": "تخطي",
+"adWait": {
+"fmt": "تخطي بعد {0}"
+},
+"adGot": "حصلت على تلميح",
+"adContinue": "تابع",
+"lang": "اللغة",
+"sound": "الصوت",
+"haptics": "الاهتزاز",
+"comfort": "وضع الراحة",
+"removeAds": "إزالة الإعلانات (شراء تجريبي)",
+"reset": "مسح التقدم",
+"resetBtn": "مسح",
+"on": "تشغيل",
+"off": "إيقاف",
+"langBtn": "English",
+"locked": "مقفلة",
+"lvl": {
+"fmt": "المرحلة {0}"
+},
+"dailyT": {
+"fmt": "صدع اليوم #{0}"
+},
+"helpTitle": "كيف تلعب",
+"help1": "اسحب أي صف أفقياً أو مائلاً. القطع التي تخرج من طرف تعود من الطرف الآخر.",
+"help2": "من المرحلة الخامسة: اضغط مطولاً على قطعة ثم اسحب، فيتحرك الصدع كله نحو الحافة.",
+"help3": "اضغط مطولاً على معاينة لترى الصورة كاملة.",
+"help4": "حركات أقل تعني ترميماً أجمل. أنهِها ضمن الهدف لتنال «تحفة».",
+"gotIt": "فهمت",
+"hintsFree": {
+"fmt": "{0}"
+},
+"adBadge": "إعلان",
+"reveal": "اضغط للتخطي",
+"resetDone": "تم مسح التقدم",
+"aboutPic": "عن الصورة",
+"soundOn": "الصوت مفعّل",
+"soundOff": "الصوت مكتوم",
+"theme": "المظهر",
+"themeDark": "داكن",
+"themeLight": "فاتح",
+"liveBoard": "الصور الحية",
+"liveHint": "تتحرك الصورة أثناء اللعب",
+"liveOffAuto": "أوقفنا حركة الصورة للحفاظ على سلاسة اللعب.",
+"resetTitle": "مسح كل التقدم؟",
+"resetWarn": "ستفقد المراحل والذهب والبيت الذي رمّمته. لا يمكن التراجع.",
+"cancel": "إلغاء",
+"comfortHint": "يوقف الحركة والاهتزاز",
+"dailyGold": {
+"fmt": "حلّها واربح حتى +{0} ذهب. لغز واحد يومياً بتوقيت الكويت."
+},
+"dailyDoneL": "حللت لغز اليوم. إعادة اللعب لا تمنح ذهباً.",
+"pcSub": {
+"fmt": "المرحلة {0} · {1}"
+},
+"tHomeDecor": "زيّن غرفك",
+"tHomeReady": {
+"fmt": "رمّم بـ {0} ذهب"
+},
+"tHomeLock": {
+"fmt": "{0}/{1} مراحل"
+},
+"tDailyReward": {
+"fmt": "حتى +{0} ذهب"
+},
+"tDailyDone": "مكتمل · عد غداً",
+"adPeek": "شاهد حتى النهاية لتحصل على 3 نظرات إضافية",
+"adPeekGot": "حصلت على 3 نظرات",
+"tapContinue": "اضغط للمتابعة",
+"playNext": "العب المرحلة التالية",
+"close": "إغلاق",
+"photoTip": "اضغط مطولاً على الصورة لحفظها",
+"photoShareText": "رمّمت غرفتي في صدع!",
+"myHome": "بيتي",
+"placeHint": "اسحب القطع لترتيب الغرفة، واضغط على قطعة لقلبها أو تخزينها.",
+"flip": "قلب",
+"store": "تخزين",
+"done": "تم",
+"restoreTitle": {
+"fmt": "رمّم {0}"
+},
+"restoreText": "استخدم الذهب لإعادة الحياة إلى الغرفة.",
+"restoreBtn": "رمّم",
+"needLevels": {
+"fmt": "أكمل {1} مراحل لفتح الترميم ({0}/{1})"
+},
+"needGold": {
+"fmt": "تحتاج {0} ذهب إضافي"
+},
+"roomRestored": "تم ترميم الغرفة!",
+"owned": {
+"fmt": "لديك {0}"
+},
+"goldSoon": "رمّم بيتك بالذهب الذي تجمعه",
+"chest": "ذهب مجاني",
+"chestLeft": {
+"fmt": "{0} متبقية"
+},
+"chestTomorrow": "عد غداً",
+"doubleGold": "ضاعف الذهب بإعلان",
+"doubled": "تمت المضاعفة",
+"adGold": "شاهد حتى النهاية لمضاعفة الذهب",
+"adGoldGot": "تمت مضاعفة الذهب",
+"adChest": "شاهد حتى النهاية لتحصل على 30 ذهب",
+"adChestGot": "حصلت على 30 ذهب",
+"adNoReward": "إغلاق بدون مكافأة",
+"replayHalf": "إعادة اللعب تمنح نصف الذهب.",
+"lessons": [
+"اسحب الصف المضيء باتجاه السهم.",
+"القطعة التي تخرج من طرف تعود من الطرف الآخر.",
+"الصفوف تمتد بشكل مائل أيضاً.",
+"اتجاهان. فكّر أي صف تحركه أولاً.",
+"جديد: اضغط مطولاً على قطعة ثم اسحب، فيتحرك الصدع كله نحو الحافة.",
+"جرّب حركة الصدع مرة أخرى. اضغط مطولاً ثم اسحب.",
+"امزج حركة صدع مع حركة صف واحد.",
+"لوحة أكبر: 37 قطعة. القواعد نفسها.",
+"استعن بمعالم الصورة لتخطط.",
+"ثلاث حركات. انتبه للقطع التي في مكانها.",
+"الأشكال تتكرر هنا. اقرأ الألوان لا الأشكال فقط.",
+"جديد: المسمار الذهبي يثبّت كل صف يمر به. خطّط حوله.",
+"التناظر قد يخدعك. فرّق بين اليمين واليسار.",
+"الرمل والسماء متشابهان. ابحث عن التفاصيل أولاً.",
+"استخدم المعاينة إذا ضاعت منك الصورة.",
+"ابدأ من أسطع نقطة. النار تثبّت الصورة.",
+"أربع حركات. حركات أقل تعني ترميماً أجمل.",
+"جديد: الحرير يخفي بعض القطع، وتنكشف القطعة حين تعود لمكانها.",
+"خط الماء يساعدك على ترتيب الصفوف.",
+"الزجاجات متشابهة. اقرأ ألوان الزجاج.",
+"أصلح الوسط أولاً، والأطراف تتبعه.",
+"جبال في الأعلى وبحر في الأسفل. رتّب بالطبقات.",
+"أبيض على أبيض. ابحث عن وردي الزهور.",
+"حركة الصدع تصلح صفين معاً. استخدمها.",
+"آخر محطة قبل اللوحة الكبرى. خطّط لأربع حركات.",
+"اللوحة الكبرى: 61 قطعة.",
+"اللوحات الكبيرة تكافئ الصبر.",
+"ضوء الفوانيس يدلّك على مكان كل صف.",
+"ابدأ من الأطراف واتجه للداخل.",
+"عُدّ حركاتك قبل أن تسحب.",
+"خمس حركات. خطّط قبل أن تسحب.",
+"ابحث عن السيارة أولاً، والصحراء تتبعها.",
+"خطوط البيوت المستقيمة هي مسطرتك.",
+"استخدم المعاينة مبكراً لا متأخراً.",
+"ذهب في كل مكان. اقرأ أشكال الواجهات.",
+"التراجع مجاني. جرّب.",
+"فوانيس وأطباق ووسائد: رتّب بالألوان.",
+"الرمل والحجر متشابهان. ابحث عن الظلال.",
+"ست حركات. لوحة الأساتذة.",
+"النقوش تتكرر. ثق بالألوان.",
+"الترميم الأخير."
+],
+"dailyLesson": "لغز واحد كل يوم بتوقيت الكويت.",
+"tabAll": "كل المراحل",
+"tabAlb": "الألبومات",
+"streak0": "ابدأ سلسلة",
+"streakN": {
+"fmt": "سلسلة {0}"
+},
+"streakNext": {
+"fmt": "اليوم +{0} ذهب"
+},
+"streakDone": "مكتملة اليوم",
+"streakLost": "انقطعت · ابدأ من جديد",
+"streakGot": {
+"fmt": "سلسلة {0} · +{1} ذهب"
+},
+"streakInfo": "حلّ صورة واحدة كل يوم لتكبر السلسلة. اليوم السابع +150 ذهب.",
+"evTitle": "حدث الأسبوع",
+"evSub": {
+"fmt": "{1}/{2} · باقي {0} أيام"
+},
+"evGot": "حدث الأسبوع · ذهب ×2",
+"evOpen": "صور الحدث مفتوحة لك هذا الأسبوع",
+"albDone": {
+"fmt": "اكتمل الألبوم · +{0} ذهب"
+},
+"albMaster": {
+"fmt": "ألبوم ذهبي · +{0} ذهب"
+},
+"albProg": {
+"fmt": "{0}/{1} صور · {2} نجمة"
+},
+"albReward": {
+"fmt": "أكمله +{0} · كله تحفة +{1}"
+},
+"albGold": "ألبوم ذهبي",
+"albComplete": "مكتمل",
+"evBadge": "حدث ×2",
+"segX": "الخبير",
+"xTitle": {
+"fmt": "خبير · المرحلة {0}"
+},
+"xFailT": "نفدت الحركات",
+"xFailB": "في وضع الخبير لا تراجع ولا تلميح ولا معاينة. خطّط لكل حركة.",
+"retry": "أعد المحاولة",
+"exit": "خروج",
+"xTry": "جرّب تحدي الخبير",
+"xCrown": {
+"fmt": "تاج الخبير · +{0} ذهب"
+},
+"xEmpty": "من المرحلة 10: حقّق «تحفة» في أي مرحلة لتفتح تحدي الخبير فيها.",
+"xRule": "خبير: صورة أصعب، بلا تلميح ولا معاينة ولا تراجع، والحركات محدودة.",
+"xHead": {
+"fmt": "{0} تاج"
+},
+"help5": "المسمار الذهبي يثبّت كل صف يمر به، فلا يتحرك.",
+"help6": "القطع المغطاة بالحرير تنكشف حين تعود إلى مكانها.",
+"help7": "حقّق «تحفة» لتفتح تحدي الخبير وتربح تاجاً.",
+"pinBlocked": "هذا الصف مثبّت بمسمار ذهبي",
+"chal": "تحدّى صديق",
+"chalReplyBtn": "ردّ بالواتساب",
+"chalName": "اسمك في التحدي",
+"chalNameHint": "يظهر لصديقك في رسالة الواتساب",
+"chalGo": "أرسل عبر واتساب",
+"chalFrom": {
+"fmt": "{0} يتحداك!"
+},
+"chalStart": "ابدأ التحدي",
+"chalLater": "لاحقاً",
+"chalBeat": {
+"fmt": "الوقت المطلوب {0} · {1} حركات"
+},
+"chalRec": {
+"fmt": "النتيجة: أنت {0} – {1} {2}"
+},
+"chalWin": {
+"fmt": "فزت! {0} مقابل {1}"
+},
+"chalLose": {
+"fmt": "خسرت · {0} مقابل {1}"
+},
+"chalMsg": {
+"fmt": "⚡ تحدي صدع!\nرمّمت «{0}» في {1} بـ {2} حركات.\nتقدر تغلبني؟ 👇"
+},
+"chalMsgWin": {
+"fmt": "😎 غلبتك يا {0}! «{3}» خلصتها في {1} وأنت {2}.\nتبي ثأر؟ 👇"
+},
+"chalMsgLose": {
+"fmt": "🔥 كفو يا {0}! وقتك {2} وأنا {1} في «{3}».\nراجع لك 👇"
+},
+"chalTheir": {
+"fmt": "{0}"
+},
+"chalReplied": {
+"fmt": "{0} ردّ وفاز عليك"
+},
+"chalBad": "رابط التحدي غير صالح",
+"chalTouch": "يبدأ الوقت مع أول لمسة. حظاً موفقاً!",
+"me": "أنت",
+"chalRepliedLose": {
+"fmt": "{0} ردّ وخسر أمامك"
+},
+"evSubLast": {
+"fmt": "{1}/{2} · آخر يوم"
+},
+"streakN1": "سلسلة 1"
+},
+"en": {
+"title": "Fault Line",
+"tag": "Restore the picture. Keep the gold.",
+"play": "Play",
+"levels": "Levels",
+"daily": "Daily Quake",
+"settings": "Settings",
+"cuts": "Cuts",
+"target": "Target",
+"restored": "Restored",
+"undo": "Undo",
+"restart": "Restart",
+"peek": "Peek",
+"hint": "Hint",
+"next": "Next",
+"replay": "Replay",
+"share": "Share",
+"copied": "Result copied",
+"copyFail": "Could not copy",
+"grades": [
+"Mended",
+"Fine repair",
+"Masterwork"
+],
+"silver": "You used a hint. Replay without one for Masterwork.",
+"beat": "Under target. A rare repair.",
+"slide": {
+"fmt": "Slide {0}"
+},
+"hold": {
+"fmt": "Hold, then slide {0}"
+},
+"tapAgain": "Tap Hint again to play this move",
+"adLabel": "Ad slot · test mode",
+"adHead": "Sponsor space",
+"adBody": "An ad network video plays here,\nor a brand-sponsored daily picture",
+"adRewarded": "Watch to the end to get a hint",
+"adWatch": "Watch ad",
+"adNo": "Close without hint",
+"adSkip": "Skip",
+"adWait": {
+"fmt": "Skip in {0}"
+},
+"adGot": "Hint earned",
+"adContinue": "Continue",
+"lang": "Language",
+"sound": "Sound",
+"haptics": "Vibration",
+"comfort": "Comfort mode",
+"removeAds": "Remove ads (test purchase)",
+"reset": "Reset progress",
+"resetBtn": "Reset",
+"on": "On",
+"off": "Off",
+"langBtn": "العربية",
+"locked": "Locked",
+"lvl": {
+"fmt": "Level {0}"
+},
+"dailyT": {
+"fmt": "Daily Quake #{0}"
+},
+"helpTitle": "How to play",
+"help1": "Swipe any row, across or diagonally. Tiles that leave one end come back at the other.",
+"help2": "From level 5: press and hold a tile, then swipe. The whole fault slides toward the edge.",
+"help3": "Press and hold Peek to see the finished picture.",
+"help4": "Fewer cuts make a finer repair. Finish within the target for Masterwork.",
+"gotIt": "Got it",
+"hintsFree": {
+"fmt": "{0}"
+},
+"adBadge": "Ad",
+"reveal": "Tap to skip",
+"resetDone": "Progress reset",
+"aboutPic": "About this picture",
+"soundOn": "Sound on",
+"soundOff": "Sound muted",
+"theme": "Theme",
+"themeDark": "Dark",
+"themeLight": "Light",
+"liveBoard": "Living pictures",
+"liveHint": "The picture moves while you play",
+"liveOffAuto": "Picture motion turned off to keep the game smooth.",
+"resetTitle": "Reset all progress?",
+"resetWarn": "You will lose your levels, gold and the home you restored. This cannot be undone.",
+"cancel": "Cancel",
+"comfortHint": "Turns off motion and vibration",
+"dailyGold": {
+"fmt": "Solve it for up to +{0} gold. One puzzle a day, on Kuwait time."
+},
+"dailyDoneL": "Already solved today. Replays earn no gold.",
+"pcSub": {
+"fmt": "Level {0} · {1}"
+},
+"tHomeDecor": "Decorate your rooms",
+"tHomeReady": {
+"fmt": "Restore for {0} gold"
+},
+"tHomeLock": {
+"fmt": "{0}/{1} levels"
+},
+"tDailyReward": {
+"fmt": "Up to +{0} gold"
+},
+"tDailyDone": "Done · back tomorrow",
+"adPeek": "Watch to the end for 3 more peeks",
+"adPeekGot": "3 peeks added",
+"tapContinue": "Tap to continue",
+"playNext": "Play the next level",
+"close": "Close",
+"photoTip": "Press and hold the photo to save it",
+"photoShareText": "I restored my room in Fault Line!",
+"myHome": "My Home",
+"placeHint": "Drag pieces to arrange the room. Tap one to flip or store it.",
+"flip": "Flip",
+"store": "Store",
+"done": "Done",
+"restoreTitle": {
+"fmt": "Restore the {0}"
+},
+"restoreText": "Spend gold to bring this room back to life.",
+"restoreBtn": "Restore",
+"needLevels": {
+"fmt": "Finish {1} levels to unlock restoring ({0}/{1})"
+},
+"needGold": {
+"fmt": "You need {0} more gold"
+},
+"roomRestored": "Room restored!",
+"owned": {
+"fmt": "You own {0}"
+},
+"goldSoon": "Restore your home with the gold you collect",
+"chest": "Free gold",
+"chestLeft": {
+"fmt": "{0} left"
+},
+"chestTomorrow": "Back tomorrow",
+"doubleGold": "Double gold with an ad",
+"doubled": "Doubled",
+"adGold": "Watch to the end to double your gold",
+"adGoldGot": "Gold doubled",
+"adChest": "Watch to the end to get 30 gold",
+"adChestGot": "You got 30 gold",
+"adNoReward": "Close without reward",
+"replayHalf": "Replays earn half gold.",
+"lessons": [
+"Swipe the glowing row the way the arrows point.",
+"Tiles that leave one end come back at the other.",
+"Rows run diagonally too.",
+"Two directions. Decide which row goes first.",
+"New: press and hold a tile, then swipe. The whole fault slides toward the edge.",
+"Try the fault move again. Hold, then swipe.",
+"Mix a fault move with a single row.",
+"A bigger board: 37 tiles. Same rules.",
+"Use landmarks in the picture to plan.",
+"Three cuts. Watch for tiles already home.",
+"Shapes repeat here. Read the colours, not just the shapes.",
+"New: a gold pin locks every row that passes through it. Plan around it.",
+"Symmetry can fool you. Tell left from right.",
+"Sand and sky look alike. Find the details first.",
+"Use Peek if you lose the picture.",
+"Start from the brightest spot. The fire anchors the picture.",
+"Four cuts. Fewer cuts make a finer repair.",
+"New: silk hides some tiles. Each one is revealed when it reaches home.",
+"The waterline helps you line up the rows.",
+"The bottles look alike. Read the colour of the glass.",
+"Fix the centre first; the edges follow.",
+"Mountains above, sea below. Sort it in bands.",
+"White on white. Look for the pink of the flowers.",
+"A fault move fixes two rows at once. Use it.",
+"Last stop before the big board. Plan four cuts.",
+"The big board: 61 tiles.",
+"Big boards reward patience.",
+"Lantern light shows where each row belongs.",
+"Work from the edges inward.",
+"Count your cuts before you swipe.",
+"Five cuts. Plan before you swipe.",
+"Find the car first; the desert follows.",
+"Straight rooflines are your ruler.",
+"Use Peek early, not late.",
+"Gold everywhere. Read the shapes of the cases.",
+"Undo is free. Experiment.",
+"Lanterns, dishes, cushions: sort by colour.",
+"Sand and stone look alike. Find the shadows.",
+"Six cuts. The masters' board.",
+"Carvings repeat. Trust the colours.",
+"The final repair."
+],
+"dailyLesson": "One puzzle a day, on Kuwait time.",
+"tabAll": "All levels",
+"tabAlb": "Albums",
+"streak0": "Start a streak",
+"streakN": {
+"fmt": "{0} days"
+},
+"streakNext": {
+"fmt": "Today +{0} gold"
+},
+"streakDone": "Done for today",
+"streakLost": "Broken · start again",
+"streakGot": {
+"fmt": "{0}-day streak · +{1} gold"
+},
+"streakInfo": "Solve one picture a day to grow your streak. Day 7 pays +150 gold.",
+"evTitle": "Weekly event",
+"evSub": {
+"fmt": "{1}/{2} · {0} days left"
+},
+"evGot": "Weekly event · gold ×2",
+"evOpen": "Event pictures are open to you this week",
+"albDone": {
+"fmt": "Album complete · +{0} gold"
+},
+"albMaster": {
+"fmt": "Golden album · +{0} gold"
+},
+"albProg": {
+"fmt": "{0}/{1} pictures · {2} stars"
+},
+"albReward": {
+"fmt": "Complete +{0} · All masterwork +{1}"
+},
+"albGold": "Golden album",
+"albComplete": "Complete",
+"evBadge": "Event ×2",
+"segX": "Expert",
+"xTitle": {
+"fmt": "Expert · Level {0}"
+},
+"xFailT": "Out of cuts",
+"xFailB": "Expert has no undo, no hints and no peek. Plan every cut.",
+"retry": "Try again",
+"exit": "Exit",
+"xTry": "Try the Expert challenge",
+"xCrown": {
+"fmt": "Expert crown · +{0} gold"
+},
+"xEmpty": "From level 10: get Masterwork on a level to unlock its Expert challenge.",
+"xRule": "Expert: a harder scramble, no hints, no peek, no undo, limited cuts.",
+"xHead": {
+"fmt": "{0} crowns"
+},
+"help5": "A gold pin locks every row that passes through it.",
+"help6": "Silk-covered tiles reveal themselves when they reach home.",
+"help7": "Get Masterwork to unlock that level's Expert challenge and win a crown.",
+"pinBlocked": "This row is held by a gold pin",
+"chal": "Challenge a friend",
+"chalReplyBtn": "Reply on WhatsApp",
+"chalName": "Your name for challenges",
+"chalNameHint": "Your friend sees it in the WhatsApp message",
+"chalGo": "Send on WhatsApp",
+"chalFrom": {
+"fmt": "{0} challenges you!"
+},
+"chalStart": "Start the challenge",
+"chalLater": "Later",
+"chalBeat": {
+"fmt": "Time to beat {0} · {1} cuts"
+},
+"chalRec": {
+"fmt": "Score: you {0} – {1} {2}"
+},
+"chalWin": {
+"fmt": "You win! {0} vs {1}"
+},
+"chalLose": {
+"fmt": "You lose · {0} vs {1}"
+},
+"chalMsg": {
+"fmt": "⚡ Fault Line challenge!\nI restored \"{0}\" in {1} with {2} cuts.\nCan you beat me? 👇"
+},
+"chalMsgWin": {
+"fmt": "😎 Beat you, {0}! \"{3}\" in {1}, you took {2}.\nWant revenge? 👇"
+},
+"chalMsgLose": {
+"fmt": "🔥 Nice one {0}! You did {2}, I did {1} on \"{3}\".\nComing back for you 👇"
+},
+"chalTheir": {
+"fmt": "{0}"
+},
+"chalReplied": {
+"fmt": "{0} replied and beat you"
+},
+"chalBad": "This challenge link is not valid",
+"chalTouch": "The clock starts on your first touch. Good luck!",
+"me": "You",
+"chalRepliedLose": {
+"fmt": "{0} replied and lost to you"
+},
+"evSubLast": {
+"fmt": "{1}/{2} · last day"
+},
+"streakN1": "1 day"
+}
+},
+"PICS": {
+"abaya2": {
+"ar": "عبايات بألوان هادئة",
+"en": "Pastel Abayas"
+},
+"towers": {
+"ar": "أبراج الكويت",
+"en": "Kuwait Towers"
+},
+"reef": {
+"ar": "الشعاب المرجانية",
+"en": "Coral Reef"
+},
+"harbor": {
+"ar": "ميناء البوم",
+"en": "Dhow Harbor"
+},
+"flamingos": {
+"ar": "بحيرة الفلامنغو",
+"en": "Flamingo Lagoon"
+},
+"door1": {
+"ar": "باب الياسمين",
+"en": "Jasmine Door"
+},
+"oldkuwait": {
+"ar": "الكويت القديمة",
+"en": "Old Kuwait"
+},
+"abaya": {
+"ar": "بوتيك العبايات",
+"en": "Abaya Boutique"
+},
+"bedouin": {
+"ar": "مخيم البادية",
+"en": "Bedouin Camp"
+},
+"atelier": {
+"ar": "مشغل الأزياء",
+"en": "Fashion Atelier"
+},
+"trip": {
+"ar": "رحلة البر",
+"en": "Desert Trip"
+},
+"riad": {
+"ar": "فناء أندلسي",
+"en": "Andalusian Courtyard"
+},
+"door2": {
+"ar": "باب الليمون",
+"en": "Lemon Door"
+},
+"fort": {
+"ar": "القلعة",
+"en": "The Fort"
+},
+"pearl1": {
+"ar": "الغوص على اللؤلؤ",
+"en": "Pearl Diving"
+},
+"shoes": {
+"ar": "غرفة الأحذية",
+"en": "Shoe Room"
+},
+"souq": {
+"ar": "سوق رمضان",
+"en": "Ramadan Souq"
+},
+"kaftan": {
+"ar": "صالة القفاطين",
+"en": "Kaftan Salon"
+},
+"textile": {
+"ar": "سوق الأقمشة",
+"en": "Textile Souq"
+},
+"pearl2": {
+"ar": "حصاد اللؤلؤ",
+"en": "Pearl Harvest"
+},
+"mosque": {
+"ar": "المسجد",
+"en": "The Mosque"
+},
+"henna": {
+"ar": "ليلة الحناء",
+"en": "Henna Night"
+},
+"girgian": {
+"ar": "ليلة القرقيعان",
+"en": "Gergean Night"
+},
+"eid": {
+"ar": "صباح العيد",
+"en": "Eid Morning"
+},
+"natday": {
+"ar": "العيد الوطني",
+"en": "National Day"
+},
+"kosha": {
+"ar": "كوشة العرس",
+"en": "Wedding Kosha"
+},
+"gold": {
+"ar": "سوق الذهب",
+"en": "Gold Souq"
+},
+"perfume": {
+"ar": "العود والعطور",
+"en": "Oud & Perfume"
+},
+"nashal": {
+"ar": "مشغل التطريز",
+"en": "Embroidery Atelier"
+},
+"runway": {
+"ar": "أسبوع الموضة",
+"en": "Fashion Week"
+},
+"bride": {
+"ar": "غرفة العروس",
+"en": "Bride's Room"
+},
+"alula": {
+"ar": "العلا",
+"en": "AlUla"
+},
+"muscat": {
+"ar": "مطرح",
+"en": "Muttrah"
+},
+"waqif": {
+"ar": "سوق واقف",
+"en": "Souq Waqif"
+},
+"muharraq": {
+"ar": "المحرق",
+"en": "Muharraq"
+},
+"creek": {
+"ar": "خور دبي",
+"en": "Dubai Creek"
+},
+"cafe": {
+"ar": "ركن القهوة",
+"en": "Coffee Corner"
+},
+"chalet": {
+"ar": "شاليه البحر",
+"en": "Beach Chalet"
+},
+"kashta": {
+"ar": "مخيم الشتاء",
+"en": "Winter Camp"
+},
+"flowers": {
+"ar": "سوق الورد",
+"en": "Flower Market"
+},
+"ghabga": {
+"ar": "غبقة رمضان",
+"en": "Ramadan Ghabga"
+}
+},
+"LEVELS": [
+{
+"R": 2,
+"pic": "towers",
+"moves": [
+{
+"a": 0,
+"v": 0,
+"side": 0,
+"k": 2
+}
+]
+},
+{
+"R": 2,
+"pic": "abaya2",
+"moves": [
+{
+"a": 0,
+"v": 1,
+"side": 0,
+"k": -1
+}
+]
+},
+{
+"R": 2,
+"pic": "cafe",
+"moves": [
+{
+"a": 1,
+"v": 0,
+"side": 0,
+"k": 2
+}
+]
+},
+{
+"R": 2,
+"pic": "flowers",
+"moves": [
+{
+"a": 2,
+"v": -1,
+"side": 0,
+"k": 1
+},
+{
+"a": 0,
+"v": 1,
+"side": 0,
+"k": 2
+}
+]
+},
+{
+"R": 2,
+"pic": "kaftan",
+"faults": true,
+"moves": [
+{
+"a": 0,
+"v": 1,
+"side": 1,
+"k": 1
+}
+]
+},
+{
+"R": 2,
+"pic": "henna",
+"faults": true,
+"gen": 2,
+"seed": "fl3-L6"
+},
+{
+"R": 2,
+"pic": "chalet",
+"faults": true,
+"gen": 2,
+"seed": "fl3-L7"
+},
+{
+"R": 3,
+"pic": "eid",
+"gen": 2,
+"seed": "fl3-L8"
+},
+{
+"R": 3,
+"pic": "souq",
+"faults": true,
+"gen": 2,
+"seed": "fl3-L9"
+},
+{
+"R": 3,
+"pic": "natday",
+"faults": true,
+"gen": 3,
+"seed": "fl3-L10"
+},
+{
+"R": 3,
+"pic": "shoes",
+"faults": true,
+"gen": 3,
+"seed": "fl4-L11"
+},
+{
+"R": 3,
+"pic": "girgian",
+"faults": true,
+"gen": 3,
+"seed": "fl4-L12",
+"pins": 1
+},
+{
+"R": 3,
+"pic": "riad",
+"faults": true,
+"gen": 3,
+"seed": "fl4-L13"
+},
+{
+"R": 3,
+"pic": "alula",
+"faults": true,
+"gen": 3,
+"seed": "fl4-L14",
+"pins": 1
+},
+{
+"R": 3,
+"pic": "flamingos",
+"faults": true,
+"gen": 3,
+"seed": "fl4-L15"
+},
+{
+"R": 3,
+"pic": "kashta",
+"faults": true,
+"gen": 3,
+"seed": "fl4-L16",
+"pins": 2
+},
+{
+"R": 3,
+"pic": "harbor",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L17"
+},
+{
+"R": 3,
+"pic": "nashal",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L18",
+"veils": true
+},
+{
+"R": 3,
+"pic": "creek",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L19",
+"pins": 1
+},
+{
+"R": 3,
+"pic": "perfume",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L20",
+"veils": true
+},
+{
+"R": 3,
+"pic": "atelier",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L21"
+},
+{
+"R": 3,
+"pic": "muscat",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L22",
+"pins": 2
+},
+{
+"R": 3,
+"pic": "kosha",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L23",
+"veils": true
+},
+{
+"R": 3,
+"pic": "bedouin",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L24",
+"pins": 2
+},
+{
+"R": 3,
+"pic": "door2",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L25",
+"veils": true
+},
+{
+"R": 4,
+"pic": "runway",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L26",
+"veils": true
+},
+{
+"R": 4,
+"pic": "reef",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L27",
+"pins": 2
+},
+{
+"R": 4,
+"pic": "waqif",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L28",
+"veils": true
+},
+{
+"R": 4,
+"pic": "abaya",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L29"
+},
+{
+"R": 4,
+"pic": "pearl1",
+"faults": true,
+"gen": 4,
+"seed": "fl4-L30",
+"pins": 3
+},
+{
+"R": 4,
+"pic": "bride",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L31",
+"veils": true
+},
+{
+"R": 4,
+"pic": "trip",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L32"
+},
+{
+"R": 4,
+"pic": "muharraq",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L33",
+"pins": 2
+},
+{
+"R": 4,
+"pic": "oldkuwait",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L34",
+"veils": true
+},
+{
+"R": 4,
+"pic": "gold",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L35",
+"veils": true
+},
+{
+"R": 4,
+"pic": "pearl2",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L36",
+"pins": 3
+},
+{
+"R": 4,
+"pic": "ghabga",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L37",
+"veils": true
+},
+{
+"R": 4,
+"pic": "fort",
+"faults": true,
+"gen": 5,
+"seed": "fl4-L38",
+"veils": true
+},
+{
+"R": 4,
+"pic": "textile",
+"faults": true,
+"gen": 6,
+"seed": "fl4-L39",
+"pins": 3
+},
+{
+"R": 4,
+"pic": "door1",
+"faults": true,
+"gen": 6,
+"seed": "fl4-L40",
+"veils": true
+},
+{
+"R": 4,
+"pic": "mosque",
+"faults": true,
+"gen": 6,
+"seed": "fl4-L41",
+"pins": 3,
+"veils": true
+}
+],
+"FACTS": {
+"towers": {
+"en": {
+"t": "Kuwait Towers",
+"s": "Opened in 1979 — and still part of the city's water system.",
+"b": "The Kuwait Towers were inaugurated in March 1979 and designed by Danish architect Malene Bjørn. They were the sixth and final group in a water distribution network built for a city that once shipped in its drinking water. The spheres are clad in thousands of enamelled steel discs, and the system received one of the first Aga Khan Awards for Architecture in 1980."
+},
+"ar": {
+"t": "أبراج الكويت",
+"s": "افتُتحت عام 1979 — وما زالت جزءاً من شبكة المياه.",
+"b": "افتُتحت أبراج الكويت في مارس 1979، من تصميم المعمارية الدنماركية مالين بيورن. كانت المجموعة السادسة والأخيرة ضمن شبكة توزيع مياه بُنيت لمدينة كانت تستورد ماء شربها. الكرات مكسوّة بآلاف الأقراص الفولاذية المطلية، ونالت المنظومة إحدى أولى جوائز الآغا خان للعمارة عام 1980."
+}
+},
+"abaya2": {
+"en": {
+"t": "Pastel Abayas",
+"s": "The abaya is cut to fall straight from the shoulder.",
+"b": "The abaya is a loose overgarment worn above everyday clothes. Its cut is deliberately simple: it hangs from the shoulder so the fabric, not the body, carries the line. Once almost always black, it is now made in soft colours and light fabrics, with the detail saved for the cuffs and the front opening."
+},
+"ar": {
+"t": "عبايات بألوان هادئة",
+"s": "العباية مقصوصة لتنسدل من الكتف مباشرة.",
+"b": "العباية رداء واسع يُلبس فوق الثياب. قَصّتها بسيطة عن قصد: تنسدل من الكتف فيحمل القماشُ الخطَّ لا الجسد. كانت سوداء في الغالب، واليوم تُصنع بألوان هادئة وأقمشة خفيفة، ويُترك التطريز للأكمام وفتحة الأمام."
+}
+},
+"shoes": {
+"en": {
+"t": "Shoe Room",
+"s": "Every shoe is built around a foot-shaped mould called a last.",
+"b": "A shoemaker starts with a last, a solid form shaped like a foot, and builds the shoe around it. The last decides the fit, the toe shape and how the heel sits, which is why two shoes of the same size can feel completely different. Fine shoes are still shaped by hand on wooden lasts."
+},
+"ar": {
+"t": "غرفة الأحذية",
+"s": "كل حذاء يُبنى حول قالب على شكل القدم اسمه القالب.",
+"b": "يبدأ صانع الحذاء بالقالب، وهو مجسّم صلب على هيئة القدم، ثم يبني الحذاء حوله. القالب يحدد الراحة وشكل المقدمة وموضع الكعب، ولهذا قد يختلف إحساس حذاءين بالمقاس نفسه تماماً. وما زالت الأحذية الفاخرة تُشكَّل يدوياً على قوالب خشبية."
+}
+},
+"flamingos": {
+"en": {
+"t": "Flamingo Lagoon",
+"s": "Thousands of flamingos spend the winter on Kuwait's shores.",
+"b": "Greater flamingos gather in Kuwait Bay, especially around Sulaibikhat and Jahra, and flocks of up to three thousand have been recorded. They are easiest to see from November to March. Kuwait sits on the Central Asian Flyway, and more than 400 bird species have been recorded in the country."
+},
+"ar": {
+"t": "بحيرة الفلامنغو",
+"s": "آلاف من طيور النحام تقضي الشتاء على سواحل الكويت.",
+"b": "يتجمّع النحام الكبير في جون الكويت، خاصة عند السالمية والصليبيخات والجهراء، وسُجّلت أسراب تصل إلى ثلاثة آلاف طائر. وأفضل وقت لمشاهدتها من نوفمبر إلى مارس. تقع الكويت على مسار الهجرة الآسيوي الأوسط، وسُجّل فيها أكثر من 400 نوع من الطيور."
+}
+},
+"kaftan": {
+"en": {
+"t": "Kaftan Salon",
+"s": "That gold embroidery thread has a name: zari.",
+"b": "Zari is metallic thread, historically gold or silver wrapped around a silk core, used across the Gulf to embroider festive dress. In Kuwait it covers the thob, a sheer overgarment worn above a dara'a for weddings and Eid. Much of the thread and fine fabric arrived by sea from India, and the embroidery was done locally."
+},
+"ar": {
+"t": "صالة القفاطين",
+"s": "خيط التطريز الذهبي له اسم: الزري.",
+"b": "الزري خيط معدني، كان ذهباً أو فضة يُلفّ حول قلب حريري، ويُستخدم في الخليج لتطريز ثياب المناسبات. وفي الكويت يغطي الثوب، وهو رداء شفاف يُلبس فوق الدراعة في الأعراس والعيد. وكان كثير من الخيط والقماش الفاخر يصل بحراً من الهند، ويُطرَّز محلياً."
+}
+},
+"reef": {
+"en": {
+"t": "Coral Reef",
+"s": "Coral is an animal, not a plant or a rock.",
+"b": "A reef is built by coral polyps, tiny animals that grow a limestone skeleton around themselves. Their colour comes from algae living inside their tissue, which feed the coral through photosynthesis. When the water gets too warm the coral expels the algae and turns white, which is why bleaching is a warning sign."
+},
+"ar": {
+"t": "الشعاب المرجانية",
+"s": "المرجان حيوان، لا نبات ولا صخر.",
+"b": "تبني الشِّعاب حيواناتٌ دقيقة اسمها بوليبات المرجان، تكوّن حول نفسها هيكلاً جيرياً. ولونها يأتي من طحالب تعيش داخل أنسجتها وتغذّيها عبر التمثيل الضوئي. وإذا ارتفعت حرارة الماء كثيراً يطرد المرجان الطحالب ويبيضّ، ولهذا يُعدّ الابيضاض إنذاراً."
+}
+},
+"pearl1": {
+"en": {
+"t": "Pearl Diving",
+"s": "A diving season lasted four months and ten days.",
+"b": "Before oil, pearling was Kuwait's main livelihood. A dhow sailed under a nokhitha (captain), with a nahham who sang to set the rhythm of the day's work, and divers who went down on a weighted rope without air. Pearls were bought by a tawash, and the season closed with the qaffal, the return of the fleet. Kuwaitis still sail an annual heritage voyage."
+},
+"ar": {
+"t": "الغوص على اللؤلؤ",
+"s": "كان موسم الغوص أربعة أشهر وعشرة أيام.",
+"b": "قبل النفط كان الغوص مصدر رزق الكويت الأول. تُبحر السفينة بقيادة النوخذة، ومعها النهّام الذي يغنّي ليضبط إيقاع العمل، والغاصة ينزلون على حبل مثقل بلا هواء. ويشتري اللؤلؤ الطوّاش، وينتهي الموسم بـ«القفّال»، أي عودة الأسطول. وما زال الكويتيون يبحرون رحلة تراثية سنوية."
+}
+},
+"oldkuwait": {
+"en": {
+"t": "Old Kuwait",
+"s": "The old town was built from the sea it faced.",
+"b": "Houses were raised from mud brick and coral stone cut from the shore, with flat roofs carried on mangrove poles. The carved doors were a different story: the best teak came by dhow from India, so a merchant's door announced how far his trade reached. Courtyards, not windows, did the work of light and air."
+},
+"ar": {
+"t": "الكويت القديمة",
+"s": "بُنيت المدينة القديمة من البحر الذي تطلّ عليه.",
+"b": "كانت البيوت تُرفع من الطين وحجر البحر المقطوع من الساحل، وأسقفها مسطّحة محمولة على جذوع القندل. أما الأبواب المحفورة فقصة أخرى: كان أجود الساج يصل بالسفن من الهند، فكان باب التاجر يعلن إلى أين وصلت تجارته. والأفنية، لا النوافذ، هي التي كانت تجلب الضوء والهواء."
+}
+},
+"souq": {
+"en": {
+"t": "Ramadan Souq",
+"s": "In Ramadan the souq wakes up after sunset.",
+"b": "Through the month the market's busiest hours come after iftar, when families shop late into the night for dates, nuts, sweets and fabric. Midway through Ramadan, Gulf children go door to door in their best clothes for Gergean, collecting sweets and nuts and singing for them. Lanterns go up at the start of the month and come down at Eid."
+},
+"ar": {
+"t": "سوق رمضان",
+"s": "في رمضان يستيقظ السوق بعد المغرب.",
+"b": "طوال الشهر تكون أزحم ساعات السوق بعد الإفطار، حين تتسوّق العوائل حتى وقت متأخر: تمر ومكسرات وحلويات وأقمشة. وفي منتصف رمضان يطوف أطفال الخليج على البيوت بأجمل ثيابهم في «القرقيعان»، يجمعون الحلوى والمكسرات ويغنّون لها. وتُعلَّق الفوانيس أول الشهر وتُنزَل في العيد."
+}
+},
+"textile": {
+"en": {
+"t": "Textile Souq",
+"s": "The Gulf's cloth trade arrived by sail.",
+"b": "Long before container ships, bolts of silk, chiffon and brocade reached Gulf ports on the same dhows that carried dates out and timber in. Tailors bought by the metre and cut to order, and the gilded thread for embroidery came largely from India. A fabric shop was also a meeting place: you chose cloth, then sat and talked."
+},
+"ar": {
+"t": "سوق الأقمشة",
+"s": "وصلت تجارة القماش إلى الخليج بالشراع.",
+"b": "قبل سفن الحاويات بزمن طويل، كانت لفّات الحرير والشيفون والبروكار تصل موانئ الخليج على السفن ذاتها التي تحمل التمر وتعود بالخشب. يشتري الخيّاطون بالمتر ويفصّلون على الطلب، وكان خيط الزري يأتي غالباً من الهند. ودكان القماش كان مجلساً أيضاً: تختار الثوب ثم تجلس وتتحدث."
+}
+},
+"riad": {
+"en": {
+"t": "Andalusian Courtyard",
+"s": "A courtyard cools a house without any machine.",
+"b": "Turn the rooms inward around an open court and the building cools itself: shaded stone stays cold, the fountain adds moisture, and warm air rises out of the open top while cooler air is drawn in. The star-and-polygon tilework, zellige, is cut piece by piece and set face down into the pattern."
+},
+"ar": {
+"t": "فناء أندلسي",
+"s": "الفناء يبرّد البيت بلا آلة.",
+"b": "أدِر الغرف إلى الداخل حول فناء مفتوح فيبرّد المبنى نفسه: الحجر المظلّل يبقى بارداً، والنافورة ترطّب الهواء، والهواء الساخن يصعد من الفتحة بينما يُسحب الأبرد إلى الداخل. أما الزليج بنجومه ومضلّعاته فيُقَصّ قطعةً قطعة ويُركَّب مقلوباً على وجهه."
+}
+},
+"harbor": {
+"en": {
+"t": "Dhow Harbor",
+"s": "Kuwait built the Gulf's long-distance ships.",
+"b": "The boom was the big ocean-going dhow, built for the run to India and East Africa, carrying dates out and returning with timber, cloth and rice. Smaller craft had their own names and jobs: the sambuk, the jalboot, the shou'i for pearling. Kuwaiti shipwrights, the qallaleef, worked without drawings, by eye and by memory."
+},
+"ar": {
+"t": "ميناء البوم",
+"s": "الكويت بنت سفن الخليج البعيدة.",
+"b": "البوم هو السفينة الكبيرة العابرة للمحيط، بُنيت لرحلة الهند وشرق أفريقيا، تحمل التمر وتعود بالخشب والقماش والأرز. وللقوارب الأصغر أسماؤها وأعمالها: السنبوك والجالبوت والشوعي للغوص. وكان القلاليف، بنّاؤو السفن الكويتيون، يعملون بلا رسومات، بالعين والذاكرة."
+}
+},
+"atelier": {
+"en": {
+"t": "Fashion Atelier",
+"s": "A pattern is a flat map of a three-dimensional body.",
+"b": "Before anything is cut, the dress exists as flat paper shapes that account for the curve of a shoulder and the turn of a waist. Drape those pieces on a form, pin, correct, and flatten again: that back-and-forth between flat and round is most of the craft. The toile, a plain test version, is sewn first so mistakes are cheap."
+},
+"ar": {
+"t": "مشغل الأزياء",
+"s": "الباترون خريطة مسطّحة لجسد ثلاثي الأبعاد.",
+"b": "قبل أي قَصّ، يكون الفستان أشكالاً ورقية مسطّحة تراعي انحناء الكتف ودوران الخصر. تُلبَس هذه القطع على المانيكان، ثم تُثبَّت وتُصحَّح وتُبسَط من جديد: هذا التنقّل بين المسطّح والمجسّم هو جوهر الحرفة. وتُخاط «التوال»، وهي نسخة تجريبية بسيطة، أولاً كي يكون الخطأ رخيصاً."
+}
+},
+"bedouin": {
+"en": {
+"t": "Bedouin Camp",
+"s": "Sadu weaving is on UNESCO's heritage list.",
+"b": "Sadu is a warp-faced weave made by Bedouin women on a ground loom staked out on the sand. Its geometric patterns are built from rhythm and symmetry, in red, black, white and orange, and were used for tent panels, rugs and camel trappings. UNESCO added it to the Representative List of the Intangible Cultural Heritage of Humanity in 2020."
+},
+"ar": {
+"t": "مخيم البادية",
+"s": "نسج السدو مُدرَج على قائمة اليونسكو للتراث.",
+"b": "السدو نسيج تصنعه نساء البادية على نول أرضي يُثبَّت في الرمل. وتُبنى زخارفه الهندسية على الإيقاع والتناظر، بالأحمر والأسود والأبيض والبرتقالي، وكانت تُستخدم لجدران بيت الشعر والسجاد وزينة الإبل. وأدرجته اليونسكو على القائمة التمثيلية للتراث الثقافي غير المادي عام 2020."
+}
+},
+"door2": {
+"en": {
+"t": "Lemon Door",
+"s": "The tilework is cut by hand, piece by piece.",
+"b": "Each small shape in a zellige panel is chipped from a glazed tile with a sharp hammer, then laid face down so the pattern is assembled in mirror image before plaster is poured over the back. The geometry grows from a circle divided into equal parts, which is why star patterns of 8, 12 and 16 points recur across the Islamic world."
+},
+"ar": {
+"t": "باب الليمون",
+"s": "الزليج يُقَصّ باليد قطعةً قطعة.",
+"b": "كل شكل صغير في لوح الزليج يُنحَت من بلاطة مزجّجة بمطرقة حادة، ثم يُرَصّ مقلوباً على وجهه فتُركَّب الزخرفة معكوسة قبل أن يُصبّ الجص على الظهر. وتنشأ الهندسة من دائرة تُقسَّم أقساماً متساوية، ولهذا تتكرر النجوم الثمانية والاثنتا عشرة والستّ عشرة في العالم الإسلامي."
+}
+},
+"abaya": {
+"en": {
+"t": "Abaya Boutique",
+"s": "In the Gulf, gold was the savings account.",
+"b": "Gold jewellery was never only ornament: it was wealth a woman owned outright and could sell when needed, which is why Gulf gold is bought at high karat, usually 21 or 22, and sold by weight. The old pieces were coin necklaces and heavy bangles, made to be counted as much as worn."
+},
+"ar": {
+"t": "بوتيك العبايات",
+"s": "في الخليج كان الذهب حساب الادخار.",
+"b": "لم يكن الذهب زينة فحسب: كان مالاً تملكه المرأة وحدها وتبيعه عند الحاجة، ولهذا يُشترى ذهب الخليج بعيار عالٍ، 21 أو 22 غالباً، ويُباع بالوزن. وكانت القطع القديمة عقوداً من الليرات وأساور ثقيلة، صُنعت لتُوزن بقدر ما تُلبس."
+}
+},
+"trip": {
+"en": {
+"t": "Desert Trip",
+"s": "Winter is when Kuwait moves outdoors.",
+"b": "From roughly November to March, families set up camps in the open desert for the season: tents, rugs, a fire and a dallah of coffee. The kashta is the shorter version, a day or a night out. The desert also flowers briefly after rain, which is the other reason to go."
+},
+"ar": {
+"t": "رحلة البر",
+"s": "الشتاء هو موسم خروج الكويت إلى البر.",
+"b": "من نوفمبر إلى مارس تقريباً تنصب العوائل مخيّماتها في البر طوال الموسم: بيت شعر وفرشات ونار ودلّة قهوة. و«الكشتة» هي النسخة الأقصر، يوم أو ليلة في البر. كما تُزهر الصحراء فترة قصيرة بعد المطر، وهذا سبب آخر للخروج."
+}
+},
+"pearl2": {
+"en": {
+"t": "Pearl Harvest",
+"s": "A natural pearl is an answer to an irritation.",
+"b": "When something lodges inside an oyster, the animal coats it in layer after layer of nacre, the same material that lines the shell. It can take years, and most oysters yield nothing. The Gulf's natural pearl trade collapsed in the 1930s, when cultured pearls made the same shine cheap and reliable."
+},
+"ar": {
+"t": "حصاد اللؤلؤ",
+"s": "اللؤلؤة الطبيعية جوابٌ على أذى.",
+"b": "حين يعلق شيء داخل المحارة، يغلّفه الحيوان طبقةً فوق طبقة من عرق اللؤلؤ، وهو ذاته ما يبطّن الصدفة. وقد يستغرق ذلك سنوات، ومعظم المحار لا يعطي شيئاً. وانهارت تجارة اللؤلؤ الطبيعي في الخليج في الثلاثينيات، حين جعل اللؤلؤ المستزرع البريق نفسه رخيصاً ومضموناً."
+}
+},
+"fort": {
+"en": {
+"t": "The Fort",
+"s": "Thick walls are a cooling system.",
+"b": "A mud-brick wall a metre thick absorbs the day's heat so slowly that it reaches the inside only after dark, by which time the night air is carrying it away again. Narrow openings keep the sun out, and roofs of palm trunks and matting shed the little rain that falls. It is a building designed around time, not temperature."
+},
+"ar": {
+"t": "القلعة",
+"s": "الجدران السميكة نظام تبريد.",
+"b": "الجدار الطيني بسماكة متر يمتص حرارة النهار ببطء شديد حتى لا تبلغ الداخل إلا بعد الغروب، وعندها يكون هواء الليل قد بدأ يسحبها. والفتحات الضيقة تمنع الشمس، وأسقف جذوع النخل والحصير تصرّف المطر القليل. إنه بناء مصمَّم على الزمن لا على الحرارة."
+}
+},
+"door1": {
+"en": {
+"t": "Jasmine Door",
+"s": "A Gulf door was a letter from abroad.",
+"b": "The timber is usually teak, shipped from India on the same trading dhows that carried the region's dates and pearls out. Carvers worked the panels with rosettes and interlacing bands, and the rows of brass studs were structural before they were decorative, pinning the planks to the frame behind."
+},
+"ar": {
+"t": "باب الياسمين",
+"s": "باب الخليج رسالة قادمة من وراء البحر.",
+"b": "الخشب غالباً ساج يصل من الهند على سفن التجارة نفسها التي كانت تحمل تمر المنطقة ولؤلؤها. وكان النجّارون يحفرون الدرفات بالورود والأشرطة المتشابكة، أما صفوف المسامير النحاسية فكانت إنشائية قبل أن تكون زخرفية، تثبّت الألواح في الإطار خلفها."
+}
+},
+"mosque": {
+"en": {
+"t": "The Mosque",
+"s": "The pool is part of the architecture, not the garden.",
+"b": "A long reflecting pool doubles the building and settles the courtyard: still water cools the air passing over it and holds the eye at the entrance. Inside, the whole plan turns on one line, the direction of Mecca, marked by a niche in the wall called the mihrab. The minaret exists to carry a voice."
+},
+"ar": {
+"t": "المسجد",
+"s": "البركة جزء من العمارة لا من الحديقة.",
+"b": "البركة الطويلة تضاعف المبنى وتهدّئ الصحن: الماء الساكن يبرّد الهواء المارّ فوقه ويثبّت العين عند المدخل. وفي الداخل يدور المخطط كله على خط واحد هو اتجاه القبلة، يحدّده تجويف في الجدار اسمه المحراب. أما المئذنة فوُجدت لتحمل صوتاً."
+}
+},
+"henna": {
+"en": {
+"t": "Henna Night",
+"s": "Henna stains skin because of one molecule: lawsone.",
+"b": "Henna paste is made from the dried, powdered leaves of the henna plant, Lawsonia inermis. Its colour comes from lawsone, a molecule that binds to keratin in the outer layer of the skin. That is why the stain deepens for a day or two and then fades as the skin renews. In the Gulf, the henna night before a wedding is a women's evening of songs, gold and, very often, green dresses."
+},
+"ar": {
+"t": "ليلة الحناء",
+"s": "الحناء تصبغ الجلد بفضل جزيء واحد اسمه اللوسون.",
+"b": "تُصنع عجينة الحناء من أوراق نبتة الحناء المجففة والمطحونة. ويأتي لونها من جزيء اللوسون الذي يرتبط بالكيراتين في الطبقة الخارجية من الجلد، ولهذا يزداد النقش عمقاً يوماً أو يومين ثم يبهت مع تجدد الجلد. وفي الخليج تكون ليلة الحناء قبل العرس سهرة نسائية بالأغاني والذهب، وكثيراً ما يكون الأخضر لون الثوب فيها."
+}
+},
+"girgian": {
+"en": {
+"t": "Gergean Night",
+"s": "Gergean falls in the middle of Ramadan.",
+"b": "On the evening of the 14th or 15th of Ramadan, children dress in traditional clothes and go from door to door with cloth bags, singing for sweets and nuts. Neighbours prepare baskets for them in advance. The night has a name in each Gulf country: Gergean in Kuwait, Garangao in Qatar and Gergaoon in Bahrain, each with its own songs."
+},
+"ar": {
+"t": "ليلة القرقيعان",
+"s": "القرقيعان في منتصف شهر رمضان.",
+"b": "في ليلة الرابع عشر أو الخامس عشر من رمضان يلبس الأطفال الثياب التقليدية ويطوفون على البيوت بأكياس من القماش، يغنّون ليجمعوا الحلوى والمكسرات، ويجهّز الجيران السلال لهم مسبقاً. ولليلة اسم في كل بلد خليجي: القرقيعان في الكويت، والقرنقعوه في قطر، والقرقاعون في البحرين، ولكلٍّ أغانيه."
+}
+},
+"eid": {
+"en": {
+"t": "Eid Morning",
+"s": "Eid al-Fitr begins with the sighting of a new moon.",
+"b": "Eid al-Fitr marks the end of Ramadan and begins when the crescent of the month of Shawwal is sighted. The morning starts with the Eid prayer, then visits to family. Children wear new clothes and collect eidiya, gifts of money from relatives, often in crisp new banknotes saved especially for the day."
+},
+"ar": {
+"t": "صباح العيد",
+"s": "يبدأ عيد الفطر برؤية الهلال.",
+"b": "يأتي عيد الفطر في نهاية رمضان، ويبدأ عند رؤية هلال شهر شوال. يبدأ الصباح بصلاة العيد ثم زيارات الأهل. ويلبس الأطفال الثياب الجديدة ويجمعون العيدية من الأقارب، وكثيراً ما تكون أوراقاً نقدية جديدة تُحفظ لهذا اليوم خصيصاً."
+}
+},
+"natday": {
+"en": {
+"t": "National Day",
+"s": "Kuwait celebrates two days in a row: 25 and 26 February.",
+"b": "National Day on 25 February marks the accession of Sheikh Abdullah Al-Salem Al-Sabah, under whom Kuwait gained independence in 1961. Liberation Day follows on 26 February, marking the end of the occupation in 1991. The towers and the seafront are lit in the flag's green, white, red and black."
+},
+"ar": {
+"t": "العيد الوطني",
+"s": "تحتفل الكويت بيومين متتاليين: 25 و26 فبراير.",
+"b": "يوافق العيد الوطني في 25 فبراير ذكرى تولّي الشيخ عبدالله السالم الصباح الحكم، وفي عهده نالت الكويت استقلالها عام 1961. ويليه عيد التحرير في 26 فبراير، ذكرى انتهاء الاحتلال عام 1991. وتُضاء الأبراج والواجهة البحرية بألوان العلم: الأخضر والأبيض والأحمر والأسود."
+}
+},
+"kosha": {
+"en": {
+"t": "Wedding Kosha",
+"s": "The kosha is the bride's stage.",
+"b": "At many Gulf weddings the women's celebration has its own hall, and its centre is the kosha: a raised stage covered in flowers where the bride sits after her entrance walk. Kosha design has become a craft of its own, with florists and stage builders planning flowers, lighting and mirrors months ahead."
+},
+"ar": {
+"t": "كوشة العرس",
+"s": "الكوشة هي منصّة العروس.",
+"b": "في كثير من أعراس الخليج تُقام حفلة النساء في قاعة مستقلة، وقلبها الكوشة: منصة مرتفعة مغطاة بالورد تجلس عليها العروس بعد زفّتها. وصار تصميم الكوشة حرفة قائمة بذاتها، يخطط فيها منسّقو الورد وبنّاؤو المسارح للزهور والإضاءة والمرايا قبل العرس بأشهر."
+}
+},
+"gold": {
+"en": {
+"t": "Gold Souq",
+"s": "Gulf gold is usually 21 karat.",
+"b": "Karat measures purity out of 24, so 21-karat gold is 87.5 percent pure. Gulf jewellers favour 21 and 22 karat because the deep yellow is prized and the metal holds its value. A piece is priced by its weight at the day's gold rate, plus a charge for the craftsmanship."
+},
+"ar": {
+"t": "سوق الذهب",
+"s": "ذهب الخليج غالباً عيار 21.",
+"b": "العيار مقياس للنقاء من 24، فالذهب عيار 21 نقاؤه 87.5 بالمئة. ويفضّل صاغة الخليج عياري 21 و22 لأن الأصفر العميق مرغوب ولأن المعدن يحفظ قيمته. وتُسعَّر القطعة بوزنها حسب سعر الذهب في ذلك اليوم، مضافاً إليه أجر الصنعة."
+}
+},
+"perfume": {
+"en": {
+"t": "Oud & Perfume",
+"s": "Oud is made by a tree defending itself.",
+"b": "Oud comes from agarwood, the heartwood of Aquilaria trees. When a tree is wounded and infected by mould, it fills its wood with a dark, fragrant resin to protect itself. The resin-soaked wood is burned as chips in a mabkhara or distilled into oil, and the finest grades are among the costliest natural materials in perfumery."
+},
+"ar": {
+"t": "العود والعطور",
+"s": "العود تصنعه شجرة تدافع عن نفسها.",
+"b": "يأتي العود من خشب شجرة الأكويلاريا. فإذا جُرحت الشجرة وأصابها فطر، ملأت خشبها براتنج داكن عطري لتحمي نفسها. ويُحرق هذا الخشب المشبع بالراتنج قطعاً في المبخرة أو يُقطَّر دهناً، وأجود أنواعه من أغلى المواد الطبيعية في عالم العطور."
+}
+},
+"nashal": {
+"en": {
+"t": "Embroidery Atelier",
+"s": "The thob al-nashal is worn over another dress.",
+"b": "The nashal is a wide, sheer overgarment cut from a single sweep of fabric and worn above a dress on special occasions. Its glory is the embroidery, worked in gold zari thread around the neck and down the front, sometimes with sequins. A finely hand-embroidered thob is kept for years and often passed down."
+},
+"ar": {
+"t": "مشغل التطريز",
+"s": "ثوب النشل يُلبس فوق ثوب آخر.",
+"b": "ثوب النشل رداء واسع شفاف يُقَصّ من قطعة قماش واحدة ويُلبس فوق الثوب في المناسبات. وجماله في تطريزه بخيوط الزري الذهبية حول الرقبة وعلى الصدر، وأحياناً بالترتر. والثوب المطرّز يدوياً بإتقان يُحفظ سنوات، وكثيراً ما يُورَّث."
+}
+},
+"runway": {
+"en": {
+"t": "Fashion Week",
+"s": "Colour came to the abaya in the last two decades.",
+"b": "For generations the abaya was plain black. Since the 2000s, Gulf designers have reworked it with coloured fabrics, open fronts, embroidery and new cuts. Modest fashion has grown into a global industry, with dedicated fashion weeks held in cities including Dubai, Istanbul and London."
+},
+"ar": {
+"t": "أسبوع الموضة",
+"s": "دخلت الألوان إلى العباية في العقدين الأخيرين.",
+"b": "ظلّت العباية سوداء سادة أجيالاً. ومنذ العقد الأول من الألفية أعاد مصممو الخليج ابتكارها بأقمشة ملونة وفتحات أمامية وتطريز وقصّات جديدة. وصارت الأزياء المحتشمة صناعة عالمية، لها أسابيع موضة خاصة أُقيمت في مدن منها دبي وإسطنبول ولندن."
+}
+},
+"bride": {
+"en": {
+"t": "Bride's Room",
+"s": "A Gulf wedding is several celebrations, not one.",
+"b": "It usually begins with the milcha, the signing of the marriage contract, followed by the henna night and then the wedding party itself. Families often prepare for months: the dress, the jewellery set, the perfume, and the incense that scents the bride's clothes before she walks in."
+},
+"ar": {
+"t": "غرفة العروس",
+"s": "العرس الخليجي عدة احتفالات لا احتفال واحد.",
+"b": "يبدأ عادةً بالملچة، أي عقد القران، ثم ليلة الحناء، ثم حفل العرس نفسه. وتستعد العوائل غالباً لأشهر: الفستان وطقم الذهب والعطر، والبخور الذي تُعطَّر به ثياب العروس قبل أن تُزَفّ."
+}
+},
+"alula": {
+"en": {
+"t": "AlUla",
+"s": "Hegra was Saudi Arabia's first UNESCO World Heritage Site.",
+"b": "Hegra, also called Mada'in Salih, was the largest settlement of the Nabataeans after Petra. More than a hundred monumental tombs are carved into its sandstone outcrops, dating from the 1st century BC to the 1st century AD, many with inscriptions above their doors. UNESCO listed it in 2008."
+},
+"ar": {
+"t": "العلا",
+"s": "الحِجر أول موقع سعودي على قائمة اليونسكو للتراث العالمي.",
+"b": "الحِجر، وتُعرف بمدائن صالح، أكبر مستوطنات الأنباط بعد البتراء. نُحتت في صخورها الرملية أكثر من مئة مقبرة ضخمة تعود إلى ما بين القرن الأول قبل الميلاد والقرن الأول الميلادي، وفوق أبواب كثير منها نقوش. وأدرجتها اليونسكو عام 2008."
+}
+},
+"muscat": {
+"en": {
+"t": "Muttrah",
+"s": "The fort above the harbour was built by the Portuguese.",
+"b": "Muttrah was Muscat's trading port long before the modern city spread along the coast. The Portuguese built the fort on the rocks above the bay in the 1580s, and the covered Muttrah Souq below is one of the oldest markets in the Arab world. Frankincense, which grows in Oman's Dhofar region, still burns in its stalls."
+},
+"ar": {
+"t": "مطرح",
+"s": "القلعة المطلّة على الميناء بناها البرتغاليون.",
+"b": "كانت مطرح ميناء مسقط التجاري قبل أن تمتد المدينة الحديثة على الساحل بزمن طويل. بنى البرتغاليون القلعة على الصخور فوق الخليج في ثمانينيات القرن السادس عشر، وسوق مطرح المسقوف تحتها من أقدم أسواق العالم العربي. وما زال اللبان، الذي ينمو في ظفار، يفوح في دكاكينه."
+}
+},
+"waqif": {
+"en": {
+"t": "Souq Waqif",
+"s": "Its name means 'the standing market'.",
+"b": "Traders once sold their goods standing up on the banks of a wadi that flooded in the rains, and the name stuck. The souq was rebuilt from 2006 using traditional mud plaster and wooden beams. Its lanes hold spice, textile and perfume shops, and a falcon souq with a falcon hospital nearby."
+},
+"ar": {
+"t": "سوق واقف",
+"s": "اسمه يعني السوق الذي يقف فيه الباعة.",
+"b": "كان التجار يبيعون بضائعهم وقوفاً على ضفاف وادٍ يفيض مع المطر، فبقي الاسم. أُعيد بناء السوق منذ عام 2006 بالمواد التقليدية من لياسة الطين وجذوع الخشب. وفي أزقته محلات البهارات والأقمشة والعطور، وسوق للصقور وبقربه مستشفى للصقور."
+}
+},
+"muharraq": {
+"en": {
+"t": "Muharraq",
+"s": "Bahrain's Pearling Path is a UNESCO World Heritage Site.",
+"b": "Listed in 2012 as 'Pearling, Testimony of an Island Economy', it links oyster beds, a stretch of seashore and seventeen buildings in Muharraq into a walk of about 3.5 kilometres. The houses belonged to pearl merchants, boat captains and the families who lived off the trade, and wind towers kept them cool long before electricity."
+},
+"ar": {
+"t": "المحرق",
+"s": "طريق اللؤلؤ في البحرين موقع تراث عالمي.",
+"b": "أُدرج عام 2012 باسم «صناعة اللؤلؤ: شاهد على اقتصاد جزيرة»، ويربط مغاصات اللؤلؤ وجزءاً من الساحل وسبعة عشر مبنى في المحرق في مسار يقارب 3.5 كيلومتر. كانت البيوت لتجار اللؤلؤ والنواخذة والعوائل التي عاشت من هذه المهنة، وكانت البراجيل تبرّدها قبل الكهرباء بزمن طويل."
+}
+},
+"creek": {
+"en": {
+"t": "Dubai Creek",
+"s": "The abra crossing costs about one dirham.",
+"b": "Before bridges and tunnels, the abra, a small wooden ferry, was the way across the Creek between Bur Dubai and Deira, and it still carries thousands of passengers a day. On the Bur Dubai side, the wind-tower houses of Al Fahidi show how the town kept cool before air conditioning."
+},
+"ar": {
+"t": "خور دبي",
+"s": "عبور الخور بالعبرة يكلّف درهماً تقريباً.",
+"b": "قبل الجسور والأنفاق كانت العبرة، وهي قارب خشبي صغير، وسيلة العبور بين بر دبي وديرة، وما زالت تنقل آلاف الركاب يومياً. وعلى جانب بر دبي تُظهر بيوت الفهيدي ببراجيلها كيف كانت المدينة تتبرّد قبل المكيّفات."
+}
+},
+"cafe": {
+"en": {
+"t": "Coffee Corner",
+"s": "Arabic coffee is on UNESCO's heritage list.",
+"b": "Arabic coffee is lightly roasted, brewed with cardamom and sometimes saffron, and poured from a dallah into small cups without handles. UNESCO inscribed it as intangible cultural heritage in 2015. A guest traditionally gives the empty cup a little shake to say they have had enough."
+},
+"ar": {
+"t": "ركن القهوة",
+"s": "القهوة العربية على قائمة اليونسكو للتراث.",
+"b": "القهوة العربية تُحمَّص تحميصاً خفيفاً وتُطبخ بالهيل وأحياناً بالزعفران، وتُصبّ من الدلّة في فناجين صغيرة بلا مقابض. وأدرجتها اليونسكو تراثاً ثقافياً غير مادي عام 2015. ومن العادة أن يهزّ الضيف الفنجان الفارغ هزّة خفيفة ليقول إنه اكتفى."
+}
+},
+"chalet": {
+"en": {
+"t": "Beach Chalet",
+"s": "Kuwait has roughly 500 km of coastline.",
+"b": "Counting its islands, Kuwait's coast runs for about 500 kilometres, and the southern shore toward Al-Khiran is lined with weekend chalets. Families escape the city there on weekends and holidays, in the cooler months by day and in summer by night."
+},
+"ar": {
+"t": "شاليه البحر",
+"s": "للكويت ساحل يقارب 500 كيلومتر.",
+"b": "إذا حُسبت الجزر، امتد ساحل الكويت نحو 500 كيلومتر، وتصطف الشاليهات على الساحل الجنوبي باتجاه الخيران. تهرب العوائل إليها من المدينة في العطل ونهاية الأسبوع، نهاراً في الأشهر الباردة وليلاً في الصيف."
+}
+},
+"kashta": {
+"en": {
+"t": "Winter Camp",
+"s": "Kuwait's camping season opens each winter.",
+"b": "Each year an official spring camping season is announced, usually running from around November to March, with set areas and rules for tents. A kashta is a shorter trip out: a fire, coffee from a dallah, roasted corn and a night under the stars once the desert finally cools."
+},
+"ar": {
+"t": "مخيم الشتاء",
+"s": "يُفتح موسم التخييم في الكويت كل شتاء.",
+"b": "يُعلن كل عام موسم التخييم الربيعي الرسمي، ويمتد غالباً من نوفمبر تقريباً إلى مارس، بمواقع محددة وأنظمة للخيام. أما الكشتة فطلعة أقصر: نار ودلّة قهوة وذرة مشوية وليلة تحت النجوم حين يبرد البر أخيراً."
+}
+},
+"flowers": {
+"en": {
+"t": "Flower Market",
+"s": "Taif roses become one of the world's costliest oils.",
+"b": "In spring, the rose farms around Taif in Saudi Arabia are picked at dawn, when the scent is strongest. It takes thousands of petals to distil a small amount of rose oil, which is why Taif rose oil is sold by the tola, a tiny unit of about 12 grams, and prized in perfumes across the Gulf."
+},
+"ar": {
+"t": "سوق الورد",
+"s": "ورد الطائف يتحوّل إلى أحد أغلى الزيوت في العالم.",
+"b": "في الربيع يُقطف ورد مزارع الطائف عند الفجر حين تكون رائحته في أقواها. ويحتاج تقطير كمية صغيرة من دهن الورد إلى آلاف البتلات، ولهذا يُباع دهن الورد الطائفي بالتولة، وهي وحدة صغيرة تقارب 12 غراماً، ويحظى بمكانة خاصة في عطور الخليج."
+}
+},
+"ghabga": {
+"en": {
+"t": "Ramadan Ghabga",
+"s": "The ghabga is the gathering between iftar and suhoor.",
+"b": "In Kuwait and across the Gulf, the ghabga is a late-night Ramadan gathering of family, friends or colleagues. It usually means a long spread of dishes such as machboos, harees and luqaimat, with tea, coffee and sweet drinks, and it can run until close to suhoor."
+},
+"ar": {
+"t": "غبقة رمضان",
+"s": "الغبقة هي اللقاء بين الإفطار والسحور.",
+"b": "في الكويت والخليج، الغبقة سهرة رمضانية تجمع الأهل أو الأصدقاء أو زملاء العمل. وتعني عادةً سفرة طويلة من المجبوس والهريس واللقيمات، مع الشاي والقهوة والمشروبات الحلوة، وقد تمتد حتى قرب السحور."
+}
+}
+},
+"ALBUMS": [
+{
+"id": "couture",
+"ar": "أناقة",
+"en": "Couture",
+"pics": [
+"abaya2",
+"abaya",
+"shoes",
+"kaftan",
+"atelier",
+"nashal",
+"runway",
+"bride"
+]
+},
+{
+"id": "celebrate",
+"ar": "ليالي الفرح",
+"en": "Celebrations",
+"pics": [
+"henna",
+"girgian",
+"eid",
+"natday",
+"kosha",
+"ghabga"
+]
+},
+{
+"id": "souqs",
+"ar": "أسواق وعطور",
+"en": "Souqs & Scents",
+"pics": [
+"souq",
+"textile",
+"gold",
+"perfume",
+"flowers",
+"waqif"
+]
+},
+{
+"id": "journeys",
+"ar": "رحلات الخليج",
+"en": "Gulf Journeys",
+"pics": [
+"towers",
+"oldkuwait",
+"alula",
+"muscat",
+"muharraq",
+"creek",
+"fort",
+"mosque"
+]
+},
+{
+"id": "sea",
+"ar": "البحر واللؤلؤ",
+"en": "Sea & Pearls",
+"pics": [
+"reef",
+"pearl1",
+"pearl2",
+"harbor",
+"flamingos",
+"chalet"
+]
+},
+{
+"id": "sweet",
+"ar": "أيام حلوة",
+"en": "Sweet Days",
+"pics": [
+"cafe",
+"kashta",
+"trip",
+"bedouin",
+"riad",
+"door1",
+"door2"
+]
+}
+],
+"ROOMS": [
+{
+"id": "majlis",
+"ar": "المجلس",
+"en": "Majlis",
+"ruin": "r1x",
+"done": "r1",
+"cost": 120,
+"req": 5,
+"win": [
+0.66,
+0.37
+]
+},
+{
+"id": "diwaniya",
+"ar": "الديوانية",
+"en": "Diwaniya",
+"ruin": "r2x",
+"done": "r2",
+"cost": 180,
+"req": 10,
+"win": [
+0.68,
+0.4
+]
+}
+],
+"FURN": [
+{
+"id": "seat",
+"ar": "جلسة سدو",
+"en": "Sadu seating",
+"price": 120,
+"w": 0.4
+},
+{
+"id": "rug",
+"ar": "سجاد",
+"en": "Rugs",
+"price": 60,
+"w": 0.38,
+"floor": true
+},
+{
+"id": "table",
+"ar": "طاولة القهوة",
+"en": "Coffee table",
+"price": 80,
+"w": 0.19
+},
+{
+"id": "chest",
+"ar": "صندوق مبيّت",
+"en": "Mubayyat chest",
+"price": 90,
+"w": 0.16
+},
+{
+"id": "palm",
+"ar": "نخلة",
+"en": "Date palm",
+"price": 50,
+"w": 0.14
+},
+{
+"id": "lantern",
+"ar": "فانوس",
+"en": "Lantern",
+"price": 40,
+"w": 0.08
+},
+{
+"id": "mabkhara",
+"ar": "مبخرة",
+"en": "Mabkhara",
+"price": 30,
+"w": 0.08
+},
+{
+"id": "jars",
+"ar": "جِرار",
+"en": "Clay jars",
+"price": 35,
+"w": 0.11
+},
+{
+"id": "panel",
+"ar": "لوحة سدو",
+"en": "Sadu panel",
+"price": 45,
+"w": 0.14,
+"wall": true
+},
+{
+"id": "shelf",
+"ar": "رف",
+"en": "Wall shelf",
+"price": 55,
+"w": 0.18,
+"wall": true
+}
+],
+"HOMEKEYS": [
+"shelf",
+"jars",
+"r1",
+"r2",
+"table",
+"chest",
+"rug",
+"r2x",
+"r1x",
+"mabkhara",
+"palm",
+"lantern",
+"seat",
+"panel"
+],
+"LIVING": {
+"towers": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_012115_4fe50138-0f94-40ae-94ae-1fb141c5843a.mp4",
+"souq": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_012115_2a85fe58-4f3e-4f65-81c7-e54d61e1d310.mp4",
+"flamingos": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_012115_6e3ab1f4-43c8-408b-8135-f8ec057faa6a.mp4",
+"reef": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_96764725-ba24-4ca9-94c2-70b19fec7f56.mp4",
+"harbor": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_1c156061-34f5-47c4-a257-4ab93266f6b3.mp4",
+"abaya": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_9493e74a-494f-41d8-8d72-4eae90780264.mp4",
+"shoes": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_a148b91d-725a-4b18-a450-4fc30c9b14b3.mp4",
+"trip": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_c582c9d8-1d0d-43ed-ae68-1072bf3d50fe.mp4",
+"bedouin": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_bb470d0f-7f6a-4563-b881-27fdbdafc69c.mp4",
+"door1": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_0fce390a-f3fb-46f4-92dd-07add79b398a.mp4",
+"riad": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013141_0999557a-396c-438d-8ce6-429c988076b9.mp4",
+"textile": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013453_984e16dc-e12c-4d77-8668-faa754841742.mp4",
+"pearl1": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013453_28b6a434-fd6b-4b2d-8d27-c981963b8999.mp4",
+"oldkuwait": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013453_3762aa40-1c8d-4960-9042-eafb52c28c7e.mp4",
+"mosque": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013453_f8f6318e-9282-4258-b260-593974962a00.mp4",
+"abaya2": "https://d8j0ntlcm91z4.cloudfront.net/user_2vUFnuafJnTRFbKKIefyaDa0AyF/hf_20261006_013453_aa4cfc21-e8ae-4d3d-85c6-0d3b410b7a09.mp4"
+},
+"HERO_SOL": [
+{
+"a": 0,
+"v": 0,
+"side": 0,
+"k": 2
+},
+{
+"a": 1,
+"v": -1,
+"side": 0,
+"k": 1
+},
+{
+"a": 2,
+"v": 0,
+"side": 1,
+"k": 1
+},
+{
+"a": 0,
+"v": 1,
+"side": 0,
+"k": -1
+}
+],
+"K": {
+"GOLD_BY_GRADE": [
+10,
+20,
+40
+],
+"GOLD_DAILY_BY": [
+80,
+120,
+180
+],
+"GOLD_CHEST": 30,
+"CHEST_PER_DAY": 3,
+"DOUBLE_PER_DAY": 5,
+"FREE_HINTS": 3,
+"LESSON_FREE": 3,
+"PEEKS": 5,
+"NUDGE_MS": 90000,
+"STREAK_GOLD": [
+20,
+30,
+40,
+50,
+60,
+80,
+150
+],
+"ALB_DONE": 150,
+"ALB_MASTER": 300,
+"EXPERT_GOLD": 60,
+"CH_GOLD_WIN": 30,
+"CH_GOLD_PLAY": 10,
+"CH_PER_DAY": 5
+}
+}
