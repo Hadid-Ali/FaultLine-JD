@@ -98,8 +98,9 @@ namespace FaultLine
         void OnChest()
         {
             int lim = Content.KI("CHEST_PER_DAY"); if (Save.DayLeft("chest", lim) <= 0) { App.I.Toast(Content.T("chestTomorrow")); return; }
-            Ads.Rewarded(() =>
+            AdsController.ShowRewarded(() =>
             {
+                GameAnalyticsController.DesignEvent("chest:rewarded", Content.KI("GOLD_CHEST"));
                 Save.DayUse("chest"); int from = Save.Gold; Save.Gold = from + Content.KI("GOLD_CHEST"); Save.Persist(); Refresh(); CountUp(gold, from, Save.Gold); Sfx.Coins(5); Haptics.Do("win");
             }, Content.T("adChest"), Content.T("adChestGot"), Content.T("adNoReward"));
         }
@@ -107,7 +108,8 @@ namespace FaultLine
         {
             App.I.Anim(.65f, k => { l.text = prefix + Mathf.RoundToInt(from + (to - from) * App.EaseOut(k)); });
         }
-        public override void OnShow() { Refresh(); hero.Restart(); App.I.Delay(.3f, App.I.home.CheckOnboardBadge); }
+        public override void OnShow() { Refresh(); hero.Restart(); App.I.Delay(.3f, App.I.home.CheckOnboardBadge); AdsController.ShowBannerOn(root, BannerPosition.Bottom); }
+        public override void OnHide() { AdsController.HideBannerOn(root); }
         public void Refresh()
         {
             gold.text = Save.Gold.ToString();

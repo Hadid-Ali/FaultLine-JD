@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "dependencies": {
     "com.unity.ugui": "2.6.0",
     "com.unity.modules.androidjni": "1.0.0",
@@ -20,3 +21,45 @@
     "com.unity.modules.video": "1.0.0"
   }
 }
+=======
+    "dependencies": {
+        "com.unity.ugui": "2.6.0",
+        "com.unity.modules.androidjni": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.physicscore2d": "1.0.0",
+        "com.unity.modules.screencapture": "1.0.0",
+        "com.unity.modules.tetgen": "1.0.0",
+        "com.unity.modules.timelinefoundation": "1.0.0",
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.uielements": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.video": "1.0.0",
+        "com.applovin.mediation.ads": "8.6.6"
+    },
+    "scopedRegistries": [
+        {
+            "name": "AppLovin MAX Unity",
+            "url": "https://unity.packages.applovin.com/",
+            "scopes": [
+                "com.applovin.mediation.ads",
+                "com.applovin.mediation.adapters",
+                "com.applovin.mediation.dsp"
+            ]
+        },
+        {
+            "name": "package.openupm.com",
+            "url": "https://package.openupm.com",
+            "scopes": [
+                "com.google.external-dependency-manager"
+            ]
+        }
+    ]
+}
+>>>>>>> Stashed changes

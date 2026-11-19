@@ -36,7 +36,7 @@ namespace FaultLine
             I = this; Application.targetFrameRate = 60; Screen.sleepTimeout = SleepTimeout.SystemSetting;
             Input_Init();
             Content.Load(); Save.Load(); U.InitFonts(); U.ApplyTheme(Save.S("theme") != "light");
-            Sfx.Init(gameObject); Ads.MockShow = MockAd; Ads.Init();
+            Sfx.Init(gameObject); GameAnalyticsController.Init(); AdsController.MockShow = MockAd; AdsController.Init();
             var cam = Camera.main; if (cam == null) { var cg = new GameObject("Camera"); cg.transform.SetParent(transform); cam = cg.AddComponent<Camera>(); }
             cam.clearFlags = CameraClearFlags.SolidColor; cam.backgroundColor = U.Bg; cam.cullingMask = 0; cam.orthographic = true;
             ps = ScriptableObject.CreateInstance<PanelSettings>();

@@ -101,50 +101,10 @@ namespace FaultLine
     public static class Config
     {
         public const string BundleId = "com.sooqista.faultline";
+        public const string MaxBannerAndroid = "YOUR_BANNER_AD_UNIT_ID";
         public const string MaxRewardedAndroid = "YOUR_REWARDED_AD_UNIT_ID";
         public const string MaxInterstitialAndroid = "YOUR_INTERSTITIAL_AD_UNIT_ID";
         public const string ChallengeSite = "https://fault-line-sadaa.higgsfield.app/";
         public const string PrivacyUrl = "https://faultgame.vercel.app/privacy.html";
-    }
-
-    /// <summary>Ads facade. Without AppLovin MAX (define FAULTLINE_MAX) it shows the built-in test ad screen.</summary>
-    public static class Ads
-    {
-        public static Action<string, Action, string, string, string> MockShow; // kind, onDone, msg, got, no
-#if FAULTLINE_MAX
-        static Action pendingReward, pendingInter; static bool rewardEarned; static int retryR, retryI;
-        static string RId => Config.MaxRewardedAndroid; static string IId => Config.MaxInterstitialAndroid;
-        public static bool Live => true;
-        public static void Init()
-        {
-            MaxSdkCallbacks.OnSdkInitializedEvent += cfg => { LoadR(); LoadI(); };
-            MaxSdkCallbacks.Rewarded.OnAdLoadedEvent += (id, info) => retryR = 0;
-            MaxSdkCallbacks.Rewarded.OnAdLoadFailedEvent += (id, err) => { retryR++; App.I.Delay((float)Math.Pow(2, Math.Min(6, retryR)), LoadR); };
-            MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent += (id, err, info) => { LoadR(); pendingReward = null; };
-            MaxSdkCallbacks.Rewarded.OnAdReceivedRewardEvent += (id, reward, info) => rewardEarned = true;
-            MaxSdkCallbacks.Rewarded.OnAdHiddenEvent += (id, info) => { LoadR(); var cb = pendingReward; pendingReward = null; if (rewardEarned && cb != null) App.I.Delay(.05f, () => { Sfx.Reward(); Haptics.Do("win"); cb(); }); rewardEarned = false; };
-            MaxSdkCallbacks.Interstitial.OnAdLoadedEvent += (id, info) => retryI = 0;
-            MaxSdkCallbacks.Interstitial.OnAdLoadFailedEvent += (id, err) => { retryI++; App.I.Delay((float)Math.Pow(2, Math.Min(6, retryI)), LoadI); };
-            MaxSdkCallbacks.Interstitial.OnAdDisplayFailedEvent += (id, err, info) => { LoadI(); var cb = pendingInter; pendingInter = null; cb?.Invoke(); };
-            MaxSdkCallbacks.Interstitial.OnAdHiddenEvent += (id, info) => { LoadI(); var cb = pendingInter; pendingInter = null; App.I.Delay(.05f, () => cb?.Invoke()); };
-            MaxSdk.InitializeSdk();
-        }
-        static void LoadR() { MaxSdk.LoadRewardedAd(RId); }
-        static void LoadI() { MaxSdk.LoadInterstitial(IId); }
-        public static void Rewarded(Action onReward, string msg = null, string got = null, string no = null)
-        {
-            if (MaxSdk.IsRewardedAdReady(RId)) { pendingReward = onReward; rewardEarned = false; Save.D["lastReward"] = (double)DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(); Save.Persist(); MaxSdk.ShowRewardedAd(RId); }
-            else { App.I.Toast(Save.Ar ? "الإعلان غير جاهز بعد، حاول بعد لحظات" : "Ad not ready yet, try again in a moment"); LoadR(); }
-        }
-        public static void Interstitial(Action onDone)
-        {
-            if (MaxSdk.IsInterstitialReady(IId)) { pendingInter = onDone; MaxSdk.ShowInterstitial(IId); } else onDone();
-        }
-#else
-        public static bool Live => false;
-        public static void Init() { }
-        public static void Rewarded(Action onReward, string msg = null, string got = null, string no = null) { MockShow?.Invoke("rewarded", onReward, msg, got, no); }
-        public static void Interstitial(Action onDone) { MockShow?.Invoke("interstitial", onDone, null, null, null); }
-#endif
     }
 }

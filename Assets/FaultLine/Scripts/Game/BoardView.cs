@@ -58,7 +58,8 @@ namespace FaultLine
         {
             if (G == null || !Content.Living.Contains(G.Pic) || (vp != null && livePic == G.Pic)) return;
             StopLiving();
-            var go = App.I.gameObject; vp = go.GetComponent<VideoPlayer>() ?? go.AddComponent<VideoPlayer>();
+            // note: never use ?? with UnityEngine.Object — GetComponent returns a "fake null" in the editor that ?? treats as non-null
+            var go = App.I.gameObject; if (!go.TryGetComponent(out vp)) vp = go.AddComponent<VideoPlayer>();
             vp.playOnAwake = false; vp.isLooping = true; vp.renderMode = VideoRenderMode.APIOnly; vp.audioOutputMode = VideoAudioOutputMode.None;
             vp.source = VideoSource.Url; vp.url = System.IO.Path.Combine(Application.streamingAssetsPath, "live", G.Pic + ".mp4");
             livePic = G.Pic; liveReady = false;

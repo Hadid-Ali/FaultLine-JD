@@ -36,6 +36,7 @@ namespace FaultLine
         public double settleT0; public HashSet<int> settleSet; public double shakeT0; public float shakeAmp;
         public List<Particle> parts = new List<Particle>();
         public Action onHud, onReveal, onFail;
+        public bool gaOpen; // analytics: a progression Start was sent and not yet closed
 
         public int Target => P.target;
         public string Pic => def.pic;
@@ -76,6 +77,7 @@ namespace FaultLine
             tFirst = 0; solveMs = 0; merge = 0; lockD = null; parts.Clear(); nearPlayed = false; settleSet = null;
             st = (int[])P.start.Clone(); history.Clear(); hint = null; phase = "play"; drag = null; snap = null; flashes.Clear(); hintedAttempt = false; unveil.Clear();
             SetGuide(); onHud?.Invoke();
+            GameAnalyticsController.AttemptStart(this);
         }
         public void SetGuide()
         {
@@ -137,6 +139,7 @@ namespace FaultLine
             phase = "reveal"; revealT0 = Util.NowMs; merge = 0;
             var notes = new List<int>(); foreach (var h in history) notes.Add(0);
             Sfx.Win(history.Count); Haptics.Do("win");
+            GameAnalyticsController.AttemptComplete(this, history.Count);
             onReveal?.Invoke();
         }
         void ExpertFail()

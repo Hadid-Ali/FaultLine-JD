@@ -189,7 +189,7 @@ namespace FaultLine
                 if (!rm && Time.realtimeSinceStartupAsDouble - lastNote > .16 && k < .95f) { lastNote = Time.realtimeSinceStartupAsDouble; Sfx.Sparkle(); for (int q = 0; q < 4; q++) { float a = UnityEngine.Random.value * Mathf.PI * 2; parts.Add(new Particle { x = cx + Mathf.Cos(a) * rr, y = cy + Mathf.Sin(a) * rr, vx = 0, vy = -10, g = 0, r = 1 + UnityEngine.Random.value * 2, life = 400, max = 400, c = new Color(1, .93f, .67f), o = .9f }); } }
             }, () =>
             {
-                fx.Clear(); RoomState(R.id)["restored"] = true; Save.Persist(); Sfx.Win(5); Haptics.Do("win"); App.I.Toast(Content.T("roomRestored")); Render(); Puff(.5f, .62f, true);
+                fx.Clear(); RoomState(R.id)["restored"] = true; Save.Persist(); GameAnalyticsController.DesignEvent("room:restored:" + R.id); Sfx.Win(5); Haptics.Do("win"); App.I.Toast(Content.T("roomRestored")); Render(); Puff(.5f, .62f, true);
             }));
         }
         void Puff(float x, float y, bool gold)

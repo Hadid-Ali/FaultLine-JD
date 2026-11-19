@@ -127,7 +127,8 @@ namespace FaultLine
             if (!any) { var p = U.L(Content.T("xEmpty"), 14, U.Muted, U.Body, content, TextAnchor.MiddleCenter, true); U.Pad(p, 24, 18); return; }
             Grid(content, i => { var bb = Save.BestOf(i); return i >= 9 && bb != null && bb.I("grade") == 2; }, true);
         }
-        public override void OnShow() { }
+        public override void OnShow() { AdsController.ShowBannerOn(root, BannerPosition.Bottom); }
+        public override void OnHide() { AdsController.HideBannerOn(root); }
         public override bool Back() { return false; }
     }
 

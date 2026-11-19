@@ -66,14 +66,20 @@ namespace FaultLine
         public void Resume(Game g) { Begin(g, true); }
         void Begin(Game g, bool resume = false)
         {
+            if (G != g) GameAnalyticsController.AttemptFail(G);
             App.I.CloseAllOverlays(); G = g; G.onHud = Hud; G.onReveal = () => { }; G.onFail = ExpertFail;
+            if (!resume) GameAnalyticsController.AttemptStart(g);
             board.SetGame(g); showLayer.style.display = DisplayStyle.None; hud.style.opacity = 1;
             U.Show(raceBar, g.kind == Kind.Challenge);
             foreach (var b in new[] { hintBtn, peekBtn, undoBtn }) { b.style.opacity = g.expert ? .28f : 1; b.pickingMode = g.expert ? PickingMode.Ignore : PickingMode.Position; }
             title.style.color = g.expert ? U.Hex("#CDB6FF") : U.Ink;
             App.I.Show("game"); Hud(); Lesson();
         }
-        public void Leave() { if (G != null) { board.StopLiving(); } App.I.CloseAllOverlays(); }
+        public void Leave()
+        {
+            if (G != null) { GameAnalyticsController.AttemptFail(G); board.StopLiving(); }
+            App.I.CloseAllOverlays();
+        }
         bool LessonFree => G.kind == Kind.Level && G.idx < Content.KI("LESSON_FREE") && !G.expert;
         void Lesson()
         {
@@ -107,7 +113,7 @@ namespace FaultLine
             if (!LessonFree)
             {
                 int n = G.peeksLeft >= 0 ? G.peeksLeft : Content.KI("PEEKS");
-                if (n <= 0) { var g0 = G; Ads.Rewarded(() => { if (G == g0) { G.peeksLeft = 3; Hud(); } }, Content.T("adPeek"), Content.T("adPeekGot"), Content.T("adNoReward")); return; }
+                if (n <= 0) { var g0 = G; AdsController.ShowRewarded(() => { GameAnalyticsController.DesignEvent("peek:rewarded"); if (G == g0) { G.peeksLeft = 3; Hud(); } }, Content.T("adPeek"), Content.T("adPeekGot"), Content.T("adNoReward")); return; }
                 G.peeksLeft = n - 1; Hud();
             }
             G.peek = true; Sfx.Touch();
@@ -118,9 +124,9 @@ namespace FaultLine
             if (G.hint.HasValue) { board.PlayHint(); return; }
             if (LessonFree) { ShowHint(); return; }
             if (Save.HintsLeft(Content.KI("FREE_HINTS")) > 0) { Save.D["hintsUsed"] = (double)(Save.I("hintsUsed") + 1); Save.Persist(); ShowHint(); Hud(); return; }
-            var g0 = G; Ads.Rewarded(() => { if (G == g0) ShowHint(); });
+            var g0 = G; AdsController.ShowRewarded(() => { GameAnalyticsController.DesignEvent("hint:rewarded"); if (G == g0) ShowHint(); });
         }
-        void ShowHint() { if (G.tFirst <= 0) G.tFirst = Util.NowMs; var m = G.ComputeHint(); if (!m.HasValue) return; G.hint = m; Sfx.Hint(); Haptics.Do("hint"); App.I.Toast(Content.T("tapAgain")); }
+        void ShowHint() { if (G.tFirst <= 0) G.tFirst = Util.NowMs; var m = G.ComputeHint(); if (!m.HasValue) return; G.hint = m; GameAnalyticsController.DesignEvent("hint:used"); Sfx.Hint(); Haptics.Do("hint"); App.I.Toast(Content.T("tapAgain")); }
 
         public override void Tick(double now, float dt)
         {
@@ -146,6 +152,7 @@ namespace FaultLine
         }
         void ExpertFail()
         {
+            GameAnalyticsController.AttemptFail(G);
             VisualElement box; var o = App.I.Sheet(out box); o.userData = "locked";
             U.L(Content.T("xFailT"), 26, U.Gold, U.Display, box).style.marginBottom = 6;
             U.L(Content.T("xFailB"), 14, U.Muted, U.Body, box, TextAnchor.MiddleCenter, true).style.marginBottom = 16;
@@ -190,6 +197,7 @@ namespace FaultLine
             var rp = U.Btn(Content.T("replay"), U.BK.Surface, () => { App.I.CloseOverlay(o); G.Restart(); }, row, 50); rp.style.flexGrow = 1; rp.style.flexBasis = 0;
             if (Content.FactOf(G.Pic) != null) { var st = U.Btn(Content.T("aboutPic"), U.BK.Surface, Story, row, 50); st.style.flexGrow = 1; st.style.flexBasis = 0; }
             var ch = U.Btn(G.kind == Kind.Challenge ? Content.T("chalReplyBtn") : Content.T("chal"), U.BK.Wa, SendChallenge, row, 50, "whatsapp"); ch.style.flexGrow = 1.3f; ch.style.flexBasis = 0;
+            foreach (var bl in row.Query<Label>("label").ToList()) bl.style.fontSize = 13; // three buttons share one row — smaller text so long labels fit
             U.Gap(row, 8);
             bool next = G.kind == Kind.Level && !G.expert && G.idx < Content.Levels.Count - 1 && Meta.LvOpen(G.idx + 1);
             if (next) { var nx = U.Btn(Content.T("next"), U.BK.Primary, () => { App.I.CloseOverlay(o); Next(); }, box, 54); nx.style.marginTop = 10; }
@@ -260,8 +268,9 @@ namespace FaultLine
         {
             if (G == null || G.doubled || G.goldEarned <= 0 || Save.DayLeft("gad", Content.KI("DOUBLE_PER_DAY")) <= 0) return;
             var g0 = G;
-            Ads.Rewarded(() =>
+            AdsController.ShowRewarded(() =>
             {
+                GameAnalyticsController.DesignEvent("gold:double", g0.goldEarned);
                 if (G != g0) return; Save.DayUse("gad"); int pg = Save.Gold; Save.Gold = pg + G.goldEarned; G.doubled = true; Save.Persist();
                 App.I.Delay(.7f, () => FlyGameGold(pg, G.goldEarned)); MenuScreen.CountUp(rGold, G.goldEarned, G.goldEarned * 2, "+"); Sfx.Coins(6); Haptics.Do("win"); SetDouble();
             }, Content.T("adGold"), Content.T("adGoldGot"), Content.T("adNoReward"));
@@ -270,7 +279,7 @@ namespace FaultLine
         {
             int nx = G.idx + 1; Save.D["sinceAd"] = (double)(Save.I("sinceAd") + 1); Save.Persist();
             double lr = Save.D.D("lastReward"); bool recent = lr > 0 && DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - lr < 60000;
-            if (!Save.B("adsRemoved") && G.idx >= 3 && Save.I("sinceAd") >= 2 && !recent) { Save.D["sinceAd"] = 0.0; Save.Persist(); Ads.Interstitial(() => StartLevel(nx)); }
+            if (!Save.B("adsRemoved") && G.idx >= 3 && Save.I("sinceAd") >= 2 && !recent) { Save.D["sinceAd"] = 0.0; Save.Persist(); AdsController.ShowInterstitial(() => StartLevel(nx)); }
             else StartLevel(nx);
         }
         void Story()
