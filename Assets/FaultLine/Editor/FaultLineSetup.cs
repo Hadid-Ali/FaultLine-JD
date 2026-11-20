@@ -51,12 +51,13 @@ namespace FaultLine.EditorTools
                 var ai = AssetImporter.GetAtPath(AssetDatabase.GUIDToAssetPath(guid)) as AudioImporter; if (ai == null) continue;
                 var s = ai.defaultSampleSettings; s.loadType = AudioClipLoadType.DecompressOnLoad; ai.defaultSampleSettings = s; ai.SaveAndReimport();
             }
-            // --- AppLovin MAX: enable real ads automatically when the plugin is imported ---
-            bool hasMax = AppDomain.CurrentDomain.GetAssemblies().Any(a => { try { return a.GetType("MaxSdk") != null; } catch { return false; } });
+            // --- Google AdMob: enable real ads automatically when the Google Mobile Ads plugin is installed ---
+            bool hasAdMob = AppDomain.CurrentDomain.GetAssemblies().Any(a => { try { return a.GetType("GoogleMobileAds.Api.MobileAds") != null; } catch { return false; } });
             var defs = PlayerSettings.GetScriptingDefineSymbols(NamedBuildTarget.Android);
             var list = defs.Split(';').Where(x => x.Length > 0).ToList();
-            if (hasMax && !list.Contains("FAULTLINE_MAX")) list.Add("FAULTLINE_MAX");
-            if (!hasMax) list.Remove("FAULTLINE_MAX");
+            list.Remove("FAULTLINE_MAX"); // legacy AppLovin MAX define
+            if (hasAdMob && !list.Contains("FAULTLINE_ADMOB")) list.Add("FAULTLINE_ADMOB");
+            if (!hasAdMob) list.Remove("FAULTLINE_ADMOB");
             PlayerSettings.SetScriptingDefineSymbols(NamedBuildTarget.Android, string.Join(";", list));
             // --- scene ---
             if (!File.Exists(ScenePath))
@@ -68,7 +69,7 @@ namespace FaultLine.EditorTools
             if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.Android)
                 EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
             AssetDatabase.SaveAssets();
-            EditorUtility.DisplayDialog("Fault Line", "Project set up for Android.\n\nAds: " + (hasMax ? "AppLovin MAX detected — real ads enabled." : "test ads (import AppLovin MAX later, then run this again).") +
+            EditorUtility.DisplayDialog("Fault Line", "Project set up for Android.\n\nAds: " + (hasAdMob ? "Google AdMob detected — real ads enabled on device (set the App ID in Assets ▸ Google Mobile Ads ▸ Settings)." : "mock ads only (install the Google Mobile Ads plugin, then run this again).") +
                 "\n\nIMPORTANT: Edit ▸ Project Settings ▸ UI Toolkit ▸ tick 'Enable Advanced Text Generator' (needed for Arabic letters to join).", "OK");
         }
         static void FixTextures(string folder, int max)
