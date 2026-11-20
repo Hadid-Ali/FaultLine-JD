@@ -1,15 +1,19 @@
 using System;
 using UnityEngine;
 using UnityEngine.UIElements;
+#if FAULTLINE_ADMOB && !UNITY_EDITOR
+using GoogleMobileAds.Api;
+#endif
 
 namespace FaultLine
 {
     public enum BannerPosition { Top, Bottom }
 
     /// <summary>
-    /// AppLovin MAX ads: banner, interstitial, rewarded.
-    /// Real ads need the FAULTLINE_MAX define (set by Fault Line ▸ 1 - Set up project when MAX is imported);
-    /// without it a built-in mock is shown so the game is fully playable in the editor.
+    /// Google AdMob ads: banner, interstitial, rewarded.
+    /// Real ads need the FAULTLINE_ADMOB define (set by Fault Line ▸ 1 - Set up project when the
+    /// Google Mobile Ads plugin is installed) and only run on device; in the Editor (or without the
+    /// define) a built-in mock is shown so the game is fully playable.
     /// </summary>
     public static class AdsController
     {
@@ -82,66 +86,122 @@ namespace FaultLine
         static void NotReadyToast() { App.I.Toast(Save.Ar ? "الإعلان غير جاهز بعد، حاول بعد لحظات" : "Ad not ready yet, try again in a moment"); }
         static void MarkReward() { Save.D["lastReward"] = (double)DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(); Save.Persist(); }
 
-#if FAULTLINE_MAX
-        static string BId => Config.MaxBannerAndroid;
-        static string IId => Config.MaxInterstitialAndroid;
-        static string RId => Config.MaxRewardedAndroid;
+#if FAULTLINE_ADMOB && !UNITY_EDITOR
+        static string BId => Config.AdMobBannerAndroid;
+        static string IId => Config.AdMobInterstitialAndroid;
+        static string RId => Config.AdMobRewardedAndroid;
         public static bool Live => true;
-        static bool sdkReady, bannerCreated;
-        static Action pendingReward, pendingInter; static bool rewardEarned; static int retryR, retryI;
+        static bool sdkReady;
+        static BannerView banner; static BannerPosition bannerBuiltFor;
+        static InterstitialAd inter; static RewardedAd rewarded;
+        static Action pendingReward; static bool rewardEarned; static int retryR, retryI;
+        static bool loadingR, loadingI;
 
         public static void Init()
         {
-            MaxSdkCallbacks.OnSdkInitializedEvent += cfg =>
+            // our callbacks touch UI Toolkit and App.I timers — they must run on the main thread
+            MobileAds.RaiseAdEventsOnUnityMainThread = true;
+            MobileAds.Initialize(status =>
             {
                 sdkReady = true; LoadR(); LoadI();
                 if (BannerVisible) PlatformShowBanner();
-            };
-            // rewarded
-            MaxSdkCallbacks.Rewarded.OnAdLoadedEvent += (id, info) => retryR = 0;
-            MaxSdkCallbacks.Rewarded.OnAdLoadFailedEvent += (id, err) => { retryR++; App.I.Delay((float)Math.Pow(2, Math.Min(6, retryR)), LoadR); };
-            MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent += (id, err, info) => { LoadR(); pendingReward = null; };
-            MaxSdkCallbacks.Rewarded.OnAdReceivedRewardEvent += (id, reward, info) => rewardEarned = true;
-            MaxSdkCallbacks.Rewarded.OnAdHiddenEvent += (id, info) =>
-            {
-                LoadR(); var cb = pendingReward; pendingReward = null;
-                if (rewardEarned && cb != null) App.I.Delay(.05f, () => { Sfx.Reward(); Haptics.Do("win"); cb(); });
-                rewardEarned = false;
-            };
-            // interstitial
-            MaxSdkCallbacks.Interstitial.OnAdLoadedEvent += (id, info) => retryI = 0;
-            MaxSdkCallbacks.Interstitial.OnAdLoadFailedEvent += (id, err) => { retryI++; App.I.Delay((float)Math.Pow(2, Math.Min(6, retryI)), LoadI); };
-            MaxSdkCallbacks.Interstitial.OnAdDisplayFailedEvent += (id, err, info) => { LoadI(); var cb = pendingInter; pendingInter = null; cb?.Invoke(); };
-            MaxSdkCallbacks.Interstitial.OnAdHiddenEvent += (id, info) => { LoadI(); var cb = pendingInter; pendingInter = null; App.I.Delay(.05f, () => cb?.Invoke()); };
-            MaxSdk.InitializeSdk();
+            });
         }
-        static void LoadR() { MaxSdk.LoadRewardedAd(RId); }
-        static void LoadI() { MaxSdk.LoadInterstitial(IId); }
-        static MaxSdkBase.AdViewPosition MaxPos(BannerPosition p) { return p == BannerPosition.Top ? MaxSdkBase.AdViewPosition.TopCenter : MaxSdkBase.AdViewPosition.BottomCenter; }
+
+        // ---- rewarded ----
+        static void LoadR()
+        {
+            if (loadingR || (rewarded != null && rewarded.CanShowAd())) return;
+            loadingR = true;
+            RewardedAd.Load(RId, new AdRequest(), (ad, err) =>
+            {
+                loadingR = false;
+                if (err != null || ad == null)
+                {
+                    Debug.LogWarning("[Ads] rewarded load failed: " + err);
+                    retryR++; App.I.Delay((float)Math.Pow(2, Math.Min(6, retryR)), LoadR); return;
+                }
+                retryR = 0; rewarded = ad;
+                ad.OnAdFullScreenContentFailed += e =>
+                {
+                    Debug.LogWarning("[Ads] rewarded show failed: " + e);
+                    pendingReward = null; Drop(ref rewarded, ad); LoadR();
+                };
+                ad.OnAdFullScreenContentClosed += () =>
+                {
+                    Drop(ref rewarded, ad); LoadR();
+                    var cb = pendingReward; pendingReward = null;
+                    if (rewardEarned && cb != null) App.I.Delay(.05f, () => { Sfx.Reward(); Haptics.Do("win"); cb(); });
+                    rewardEarned = false;
+                };
+            });
+        }
+
+        // ---- interstitial ----
+        static Action pendingInter;
+        static void LoadI()
+        {
+            if (loadingI || (inter != null && inter.CanShowAd())) return;
+            loadingI = true;
+            InterstitialAd.Load(IId, new AdRequest(), (ad, err) =>
+            {
+                loadingI = false;
+                if (err != null || ad == null)
+                {
+                    Debug.LogWarning("[Ads] interstitial load failed: " + err);
+                    retryI++; App.I.Delay((float)Math.Pow(2, Math.Min(6, retryI)), LoadI); return;
+                }
+                retryI = 0; inter = ad;
+                ad.OnAdFullScreenContentFailed += e =>
+                {
+                    Debug.LogWarning("[Ads] interstitial show failed: " + e);
+                    Drop(ref inter, ad); LoadI(); var cb = pendingInter; pendingInter = null; cb?.Invoke();
+                };
+                ad.OnAdFullScreenContentClosed += () =>
+                {
+                    Drop(ref inter, ad); LoadI(); var cb = pendingInter; pendingInter = null; App.I.Delay(.05f, () => cb?.Invoke());
+                };
+            });
+        }
+
+        static void Drop<T>(ref T slot, T ad) where T : class
+        {
+            if (ReferenceEquals(slot, ad)) slot = null;
+            (ad as InterstitialAd)?.Destroy(); (ad as RewardedAd)?.Destroy();
+        }
+
+        // ---- banner ----
+        static AdPosition AdPos(BannerPosition p) { return p == BannerPosition.Top ? AdPosition.Top : AdPosition.Bottom; }
 
         static void PlatformShowBanner()
         {
             if (!sdkReady) return; // shown once the SDK finishes initializing
-            if (!bannerCreated)
+            if (banner != null && bannerBuiltFor != bannerPos) { banner.Destroy(); banner = null; }
+            if (banner == null)
             {
-                MaxSdk.CreateBanner(BId, new MaxSdkBase.AdViewConfiguration(MaxPos(bannerPos)));
-                MaxSdk.SetBannerBackgroundColor(BId, new Color(0, 0, 0, 0));
-                bannerCreated = true;
+                bannerBuiltFor = bannerPos;
+                banner = new BannerView(BId, AdSize.Banner, AdPos(bannerPos));
+                banner.OnBannerAdLoaded += () => { if (!BannerVisible) banner?.Hide(); };
+                banner.OnBannerAdLoadFailed += e => Debug.LogWarning("[Ads] banner load failed: " + e);
+                banner.LoadAd(new AdRequest());
             }
-            else MaxSdk.UpdateBannerPosition(BId, MaxPos(bannerPos));
-            MaxSdk.ShowBanner(BId);
+            banner.Show();
         }
-        static void PlatformHideBanner() { if (bannerCreated) MaxSdk.HideBanner(BId); }
+        static void PlatformHideBanner() { banner?.Hide(); }
         static void RefreshMock() { }
 
         static void PlatformInterstitial(Action onDone)
         {
-            if (sdkReady && MaxSdk.IsInterstitialReady(IId)) { pendingInter = onDone; MaxSdk.ShowInterstitial(IId); }
-            else onDone();
+            if (sdkReady && inter != null && inter.CanShowAd()) { pendingInter = onDone; inter.Show(); }
+            else { onDone(); if (sdkReady) LoadI(); }
         }
         static void PlatformRewarded(Action onRewarded, string msg, string got, string no)
         {
-            if (sdkReady && MaxSdk.IsRewardedAdReady(RId)) { pendingReward = onRewarded; rewardEarned = false; MarkReward(); MaxSdk.ShowRewardedAd(RId); }
+            if (sdkReady && rewarded != null && rewarded.CanShowAd())
+            {
+                pendingReward = onRewarded; rewardEarned = false; MarkReward();
+                rewarded.Show(reward => rewardEarned = true);
+            }
             else { NotReadyToast(); if (sdkReady) LoadR(); }
         }
 #else

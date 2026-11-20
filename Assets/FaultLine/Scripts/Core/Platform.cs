@@ -97,13 +97,17 @@ namespace FaultLine
         }
     }
 
-    /// <summary>Edit these before publishing. Ad unit IDs come from your AppLovin MAX dashboard.</summary>
+    /// <summary>Edit these before publishing.</summary>
     public static class Config
     {
         public const string BundleId = "com.sooqista.faultline";
-        public const string MaxBannerAndroid = "YOUR_BANNER_AD_UNIT_ID";
-        public const string MaxRewardedAndroid = "YOUR_REWARDED_AD_UNIT_ID";
-        public const string MaxInterstitialAndroid = "YOUR_INTERSTITIAL_AD_UNIT_ID";
+        // Google AdMob — these are Google's public TEST IDs (always serve "Test Ad", safe to click).
+        // Before release replace them with your own AdMob IDs, and set the same App ID in
+        // Assets ▸ Google Mobile Ads ▸ Settings (that asset, not this constant, is what the SDK reads).
+        public const string AdMobAppIdAndroid = "ca-app-pub-3940256099942544~3347511713";
+        public const string AdMobBannerAndroid = "ca-app-pub-3940256099942544/6300978111";
+        public const string AdMobInterstitialAndroid = "ca-app-pub-3940256099942544/1033173712";
+        public const string AdMobRewardedAndroid = "ca-app-pub-3940256099942544/5224354917";
         public const string ChallengeSite = "https://fault-line-sadaa.higgsfield.app/";
         public const string PrivacyUrl = "https://faultgame.vercel.app/privacy.html";
     }
